@@ -82,21 +82,54 @@ svg{ z-index: 10;
     fill: #78acc3;
 }
 
-.nav{display: block;
-    width:100vw;
-    background-color: rgb(31, 31, 31);
+.nav{display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    background-color: rgb(73, 73, 73);
     height: 100px;
+border-right: 10px solid #dfdf74;
+    border-bottom: 10px solid #ee82ee;
+    border-left: 10px solid #76d0f7;
    
 }
+.parte_1{
+    display: flex;
+    align-items: center;
+}
+.parte_2{
+   padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.burguer i{
+    font-size: 30px;
+    color: #cba6cb;
+}
+.buscador label{
+    font-size: 30px;
+    color: #cba6cb;
+}
+
+.iconos{
+    padding: 10px;
+}
 .uno i{
-    font-size: 50px;
-    background-color: #dfdf74;
+    font-size: 35px;
+ color: #dfdf74;
+}
+.uno i:hover{
+    
 }
 .dos i{
-    font-size: 50px;
-background-color: #ee82ee;
+    font-size: 40px;
+color:  #ee82ee;
 }
-.tres i{
-    font-size: 50px;
-    background-color: #76d0f7;
+
+svg.i{ transform: rotateZ(
+    -135deg);
+    width: 40px;
+    height: 40px;
+    color: #76d0f7;
 }
