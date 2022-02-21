@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+} 
+.contenedor{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fondo{width: 100%;
+    position: absolute;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(11,1fr);
+}
+.rectangulo{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+     background-color: #dccde0;
+}
+.negro{
+    transform: rotateZ(-45deg);
+    background-color: #000000a5;
+    width: 25px;
+    height: 50px;
+}
+.espacio{position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cuadrado{
+    z-index: 10;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #dfdf74a8;
+    transform: rotateZ(45deg);
+}
+.circulo{ 
+    z-index: 10;
+    position: relative;
+    background-color: #ee82eec2;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+svg{ z-index: 10;
+    transform: rotateZ(
+    -135deg);
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.figuras{
+    position: relative;
+}
+.sombra{z-index: 9;
+    position: absolute;
+}
+.cuadrado.sombra{ 
+    left: -70px;
+    top: 144px;
+    background-color: #e1e1ab;
+}
+.circulo.sombra{
+    left: -70px;
+    top: 144px;
+    background-color: #cba6cb;
+}
+.triangulo.sombra{
+    left: -70px;
+    top: 144px;
+    z-index: 9;
+    fill: #78acc3;
+}
+
+.nav{display: block;
+    width:100vw;
+    background-color: rgb(31, 31, 31);
+    height: 100px;
+   
+}
+.uno i{
+    font-size: 50px;
+    background-color: #dfdf74;
+}
+.dos i{
+    font-size: 50px;
+background-color: #ee82ee;
+}
+.tres i{
+    font-size: 50px;
+    background-color: #76d0f7;
+}
