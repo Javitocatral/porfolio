@@ -5,25 +5,38 @@ $(function(){
 $(".amarillo").click(function(){
 console.log("clic cuadrado");
 
-   $(this).toggleClass("grande")
-
-   $(".menu").toggleClass("abierto");
-
+   $(".amarillo").toggleClass("grande");
+   // $(this).removeClass("grande");
+   $(".yo").toggleClass("abierto");
+   // $(this).removeClass("abierto");
+   $(".amarrillo").toggleClass("oculto");
+   // $(this).removeClass("oculto");
+  
 });
 $(".rosa").click(function(){
-   console.log("clic cuadrado");
+  
    
-   
-      $(".menu.cv").toggleClass("abierto");
+   $(".rosa").toggleClass("grande");
+   // $(this).removeClass("grande");
+      $(".cv").toggleClass("abierto");
+      // $(this).removeClass("abierto");
+      $(this).addClass("oculto");
+      $(".rosa").removeClass("oculto");
+      
+      
    });
    
    $(".azul").click(function(){
-      console.log("clic cuadrado");
+     
       
       
-         $(".menu.proyectos").toggleClass("abierto");
+      $(".azul").toggleClass("grande");
+      // $(this).removeClass("grande");
+         $(".proyectos").toggleClass("abierto");
+         $(this).removeClass("abierto");
+        
       });
-      
+ 
 
 
 });

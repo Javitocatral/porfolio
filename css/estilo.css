@@ -60,7 +60,9 @@ svg{ z-index: 10;
     width: 300px;
     height: 300px;
 }
-.figuras{z-index: 2;
+.figuras{ transition-duration: 1s;
+    transition-property: all;
+    z-index: 2;
     position: relative;
 }
 .sombra{z-index: 9;
@@ -168,9 +170,10 @@ svg.i:hover{transition-duration: 0.5s;
         
     }
     .grande{
+        
         transition-duration: 1s;
        transition-property: all;
-        transform: scale(1.5) translateX(700px);
+        transform: scale(1.5) translateX(50vw);
     }
    .oculto{
        transition-duration: 1s;
@@ -204,8 +207,17 @@ svg.i:hover{transition-duration: 0.5s;
         border-bottom: 10px solid #ee82ee;
         border-left: 10px solid #76d0f7;
     }
-    .contenido h1{ margin:0px ;
+    .yo .contenido h1{ margin:0px ;
         font-size: 150px;
         color:#dfdf74 ;
+        font-family: Big Shoulders Stencil Text;
+    }
+    .cv .contenido h1{ margin:0px ;
+        font-size: 150px;
+        color:#ee82ee;
+        font-family: Big Shoulders Stencil Text;
+    }.proyectos .contenido h1{ margin:0px ;
+        font-size: 150px;
+        color:#76d0f7 ;
         font-family: Big Shoulders Stencil Text;
     }
