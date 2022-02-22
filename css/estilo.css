@@ -60,7 +60,7 @@ svg{ z-index: 10;
     width: 300px;
     height: 300px;
 }
-.figuras{
+.figuras{z-index: 2;
     position: relative;
 }
 .sombra{z-index: 9;
@@ -161,4 +161,51 @@ svg.i:hover{transition-duration: 0.5s;
         transition-duration: 1s;
         border-radius: 0px;
        
+    }
+    .menu.abierto{
+        
+        left: 0px;
+        
+    }
+    .grande{
+        transition-duration: 1s;
+       transition-property: all;
+        transform: scale(1.5) translateX(700px);
+    }
+   .oculto{
+       transition-duration: 1s;
+       transition-property: all;
+       opacity: 0;
+   }
+    .menu{
+        top: 0px;
+        left: -40%;
+        z-index: 15;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(73, 73, 73);
+        width: 40%;
+        height: 100vh;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+    }
+    .contenido{ top: 0px;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        height: 20%;
+        width: 100%;
+        border-right: 10px solid #dfdf74;
+        border-bottom: 10px solid #ee82ee;
+        border-left: 10px solid #76d0f7;
+    }
+    .contenido h1{ margin:0px ;
+        font-size: 150px;
+        color:#dfdf74 ;
+        font-family: Big Shoulders Stencil Text;
     }
