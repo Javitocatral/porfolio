@@ -10,6 +10,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-name: aparece;
+   animation-duration: 1.5s;
+   animation-timing-function: linear;
+  
 }
 .fondo{width: 100%;
     position: absolute;
@@ -44,6 +48,11 @@ body{
     height: 300px;
     background-color: #dfdf74a8;
     transform: rotateZ(45deg);
+    animation-name: late;
+    animation-duration: 0.8s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+    animation-delay:1.5s;
 }
 .circulo{ 
     z-index: 10;
@@ -52,6 +61,13 @@ body{
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    animation-name: bota;
+    animation-duration: 0.8s;
+    animation-iteration-count: 3;
+    animation-delay:3s;
+    animation-direction:alternate;
+    animation-timing-function: cubic-bezier(0.43, 0.12, 0, 0.47);
+   
 }
 svg{ z-index: 10;
     transform: rotateZ(
@@ -59,6 +75,12 @@ svg{ z-index: 10;
     position: relative;
     width: 300px;
     height: 300px;
+    animation-name: gira;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+    animation-delay:3.8s;
+   
 }
 .figuras{ transition-duration: 1s;
     transition-property: all;
@@ -86,17 +108,20 @@ svg{ z-index: 10;
 }
 
 .nav{display: flex;
-    
+    top: -100px;
     align-items: center;
     justify-content: space-between;
     width:100%;
     background-color: rgb(73, 73, 73);
     height: 100px;
-border-right: 10px solid #dfdf74;
+    border-right: 10px solid #dfdf74;
     border-bottom: 10px solid #ee82ee;
     border-left: 10px solid #76d0f7;
+    position: absolute;
+   
    
 }
+
 .parte_1{
     display: flex;
     align-items: center;
@@ -165,7 +190,7 @@ svg.i:hover{transition-duration: 0.5s;
        
     }
     .menu.abierto{
-        
+        top: 100px;
         left: 0px;
         
     }
@@ -173,15 +198,24 @@ svg.i:hover{transition-duration: 0.5s;
         
         transition-duration: 1s;
        transition-property: all;
-        transform: scale(1.5) translateX(50vw);
+        
     }
-   .oculto{
+    .amarillo.grande{
+        transform: scale(1.5) translateX(700px);
+    }
+    .rosa.grande{
+        transform: scale(1.6) translateX(400px);
+    }
+    .azul.grande{
+        transform: scale(1.6) translateX(150px);
+    }
+   .oculto{ z-index: -1;
        transition-duration: 1s;
        transition-property: all;
        opacity: 0;
    }
     .menu{
-        top: 0px;
+       
         left: -40%;
         z-index: 15;
         position: fixed;
@@ -191,11 +225,12 @@ svg.i:hover{transition-duration: 0.5s;
         justify-content: center;
         background-color: rgb(73, 73, 73);
         width: 40%;
-        height: 100vh;
+        height: calc(100vh - 100px);
         transition-property: all;
         transition-duration: 0.5s;
         transition-timing-function: linear;
     }
+    
     .contenido{ top: 0px;
         left: 0px;
         display: flex;
@@ -212,12 +247,74 @@ svg.i:hover{transition-duration: 0.5s;
         color:#dfdf74 ;
         font-family: Big Shoulders Stencil Text;
     }
-    .cv .contenido h1{ margin:0px ;
+    .yo .contenido h1:hover{
+        color:rgb(73, 73, 73);
+        background-color: #dfdf74;
+        transition-duration: 0.5s;
+    }
+    .cv .contenido h1{ 
+        margin:0px ;
         font-size: 150px;
         color:#ee82ee;
         font-family: Big Shoulders Stencil Text;
-    }.proyectos .contenido h1{ margin:0px ;
+        
+    }
+    .cv .contenido h1:hover{
+        color:rgb(73, 73, 73);
+        background-color: #ee82ee;
+        transition-duration: 0.5s;
+    }
+    
+    .proyectos .contenido h1{ 
+        margin:0px ;
         font-size: 150px;
         color:#76d0f7 ;
         font-family: Big Shoulders Stencil Text;
+    }
+    .proyectos .contenido h1:hover{
+        color:rgb(73, 73, 73);
+        background-color: #76d0f7;
+        transition-duration: 0.5s;
+    }
+    @keyframes aparece{
+        0%{
+        
+            transform: scale(0);
+        }
+        100%{
+            transform: scale(1);
+
+        }
+
+    }
+    @keyframes late{
+        0%{
+            transform: scale(1) rotate(45deg);
+        }
+        50%{
+            transform: scale(1.5) rotate(45deg);
+        }
+        100%{
+            transform: scale(1) rotate(45deg);
+        }  
+    }
+    @keyframes bota{
+        0%{
+           transform: translateY(0px);
+        }
+        
+        100%{
+            transform: translateY(100px);
+        }
+        50%{
+            transform:translateY(50px);
+        }
+    }
+    @keyframes gira{
+        0%{
+            transform: rotateZ(0deg);
+        }
+        100%{
+            transform:rotateZ(360deg);
+        }
     }
