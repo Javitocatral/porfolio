@@ -139,6 +139,7 @@ svg{
     animation-duration: 1s;
     animation-delay: 4s;
     animation-fill-mode:both ;
+    border-radius: 20px;
    
    
 }
@@ -259,7 +260,7 @@ svg.i:hover{ opacity: 1;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #010326;
+        
         width: 40%;
         height: calc(100vh - 100px);
         transition-property: all;
@@ -277,6 +278,8 @@ svg.i:hover{ opacity: 1;
         border-right: 10px solid #F2EC94;
         border-bottom: 10px solid #F291C7;
         border-left: 10px solid #5EF2E3;
+        border-radius: 20px;
+        background-color: #010326;
     }
     .yo .contenido h1{ margin:0px ;
         font-size: 150px;
@@ -428,10 +431,23 @@ svg.i:hover{ opacity: 1;
        display: flex;
        justify-content: flex-end;
     }
-    .personal-2 h1{
+     .textito {
         width: 50%;
-        padding: 80px;
+        padding: 100px;
         font-size: 100px;
+       
+    }
+    .textito-2 {
+        width:100%;
+        padding:100px 100px 100px 80px;
+        font-size:100px ;
+        margin: 0%;
+       
+    } .textito-3 {
+        width:100%;
+        padding:100px 100px 25px 80px;
+        font-size:70px ;
+        margin: 0%;
        
     }
     .personal-2 p{
@@ -446,25 +462,90 @@ svg.i:hover{ opacity: 1;
         width: 50%;
     }
     .imagen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding-right: 20px;
-        border-radius: 20px;
-        padding-right: 100px;
-        height: 460px;
-        background-color: turquoise;
+        border-radius: 20px;        
+        box-shadow:  4px 6px 5px 0px #607d8b63;
+        background-image: url("../img/yo.jpg");
         width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
     }
-    .donde{
+    
+    .donde{flex-direction: column;
+        display: flex;
+        justify-content: center; align-items: center;
         margin-top: 150px;
-        padding-top: 100px;
+       
         height: 1111px;
         border-radius: 20px;
       
         width: 80%;
         background-color: white;
     }
-    .donde h2{
-        padding: 100px;
-        font-size: 100px;
+  
+    .donde p{ 
+       
+        border-radius: 20px;
+        margin: 0px;
+        padding: 20px 100px 50px; font-size: 25px;
+    }
+    .donde iframe{
+       margin: 50px;
+        border-radius: 20px;
+    }
+    .texto-2{
+        box-shadow: -4px 6px 5px 0px #607d8b63;
+        padding-right: 20px;
+        border-radius: 20px;
+        padding-left: 20px;
+        width: 89%;
+    }
+    .hobbies{ 
+        flex-direction: column;
+        display: flex;
+        justify-content: center; align-items: center;
+        margin-top: 150px;
+       
+        height: 1500px;
+        border-radius: 20px;
+      
+        width: 80%;
+        background-color: white;
+    }
+    .roller{
+        
+        box-shadow: -4px 6px 5px 0px #607d8b63;
+        padding-right: 20px;
+        border-radius: 20px;
+        padding-left: 20px;
+        width: 89%;
+    }
+    .contenido-2{
+        display: flex;
+    }
+    .contenido-2 video{
+        width: 33%;
+        box-shadow: -4px 6px 5px 0px #607d8b63;
+        border-radius: 20px;
+        margin-bottom: 25px;
+    }
+    .contenido-2 .texto-2{
+        width: 33%;
+        box-shadow: -4px 6px 5px 0px #607d8b63;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        margin-left: 20px;
+    }
+    .contenido-2 .lista{
+        width: 33%;
+        box-shadow: -4px 6px 5px 0px #607d8b63;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        margin-left: 20px;
     }
     
 
