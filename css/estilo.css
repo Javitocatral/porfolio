@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     animation-name: aparece;
-   animation-duration: 1.5s;
+   animation-duration: 1s;
    animation-timing-function: linear;
   
 }
@@ -60,10 +60,10 @@ body{
     background-color: #F2EC94;
     transform: rotateZ(45deg);
     animation-name: late;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay:1.5s;
+    animation-delay:1s;
 }
 .circulo{ display: flex;
     justify-content: center;
@@ -75,10 +75,10 @@ body{
     height: 300px;
     border-radius: 50%;
     animation-name: late;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay:2.3s;
+    animation-delay:1.6s;
    
 }
 .triangulo_1, .triangulo{
@@ -93,10 +93,10 @@ body{
     height: 300px;
    
     animation-name: latetriangulo;
-    animation-duration:1s;
+    animation-duration:0.8s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay:3.3s;
+    animation-delay:2.4s;
 }
 .figuras{ transition-duration: 1s;
     transition-property: all;
@@ -137,7 +137,7 @@ body{
     position: absolute;
     animation-name: sale;
     animation-duration: 1s;
-    animation-delay: 4s;
+    animation-delay: 2.9s;
     animation-fill-mode:both ;
     border-radius: 20px;
    
@@ -260,7 +260,7 @@ svg.i:hover{ opacity: 1;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+        overflow: hidden;
         width: 40%;
         height: calc(100vh - 100px);
         transition-property: all;
@@ -527,8 +527,7 @@ svg.i:hover{ opacity: 1;
        margin-bottom: 150px;
         height: 2500px;
         border-radius: 20px;
-        padding-bottom: 100px;
-      
+        
         width: 80%;
         background-color: white;
     }
@@ -621,6 +620,69 @@ svg.i:hover{ opacity: 1;
     }
     .sinopsis:hover .resumen{
         transform: rotateY(0deg);
+    }
+    .cv-2{ 
+        flex-direction: row;
+        flex-wrap:wrap;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 20px;
+        margin-top: 150px;
+        background-color: white;
+        width: 80%;
+        height: 1111px;
+        margin-bottom: 150px;
+    }
+    .trabajo{margin: 10px;
+        border-radius: 20px;
+        width: 47%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#f1c8df;
+        box-shadow:  -4px 6px 5px 0px #607d8b63;
+    }
+
+    .cabecera{ 
+    
+        justify-content: center;
+        display: flex;
+        width: 100%;
+
+    }
+    .cabecera-2{flex-wrap:wrap;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .foto{
+        margin: 50px 50px 50px 0px;
+        border-radius: 20px;        
+        box-shadow:  -4px 6px 5px 0px #607d8b63;
+        background-image: url("../img/yo.jpg");
+        width: 50%;
+        
+        background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+        padding: 20px; 
+    }
+    .trabajo h2{
+        padding: 20px;
+        margin: 0%; text-align: center;
+        font-size: 50px;
+        font-weight: 800;
+    }
+    .conteido-3{
+        width: 50%;
+    }
+    .contenido-3 h5{
+        margin: 0%;
+       padding-left: 80px;
+        font-size: 50px;
     }
 
     
