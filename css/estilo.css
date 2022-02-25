@@ -81,7 +81,7 @@ body{
     animation-delay:2.3s;
    
 }
-svg{
+.triangulo_1, .triangulo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,7 @@ svg{
     width: 300px;
     height: 300px;
    
-    animation-name: late;
+    animation-name: latetriangulo;
     animation-duration:1s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
@@ -281,12 +281,15 @@ svg.i:hover{ opacity: 1;
         border-radius: 20px;
         background-color: #010326;
     }
+    .mas{
+        height: 40%;
+    }
     .yo .contenido h1{ margin:0px ;
         font-size: 150px;
         color:#F2EC94 ;
         font-family: Big Shoulders Stencil Text;
     }
-    .yo .contenido h1:hover{
+    .yo .contenido a:hover{
         color:#010326;
         background-color: #F2EC94;
         transition-duration: 0.5s;
@@ -314,6 +317,10 @@ svg.i:hover{ opacity: 1;
         color:#010326;
         background-color: #5EF2E3;
         transition-duration: 0.5s;
+    }
+    .yo a{
+        text-decoration: none;
+        color:#F2EC94;
     }
     @keyframes aparece{
         0%{
@@ -361,10 +368,11 @@ svg.i:hover{ opacity: 1;
     } 
     @keyframes sale{
         0%{
-            transform: translateY(0px);
+            top: -100px;
         }
         100%{
-            transform: translateY(100px);
+            top: 0px;
+
         }
     }
     .menphys{
@@ -397,7 +405,11 @@ svg.i:hover{ opacity: 1;
 
        
     }
-    .todo-2{
+    .casa a{
+       font-size: 50px;
+    color: #6c90fc;
+    }
+    .todo-2{overflow: hidden;
         padding: 20px;
         display: flex;
         flex-direction: row;
@@ -405,7 +417,7 @@ svg.i:hover{ opacity: 1;
     }
     .personal-2{
         
-        height: 1211px;
+        
         border-radius: 20px;
         margin-top: 150px;
         width: 80%;
@@ -451,6 +463,7 @@ svg.i:hover{ opacity: 1;
        
     }
     .personal-2 p{
+        padding: 25px;
         font-size: 25px;
     }
     .texto{
@@ -462,16 +475,16 @@ svg.i:hover{ opacity: 1;
         width: 50%;
     }
     .imagen{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+       
         padding-right: 20px;
         border-radius: 20px;        
         box-shadow:  4px 6px 5px 0px #607d8b63;
         background-image: url("../img/yo.jpg");
         width: 50%;
+        
         background-repeat: no-repeat;
-        background-size: cover;
+      background-position: center;
+      background-size: cover;
         padding: 20px;
     }
     
@@ -480,12 +493,13 @@ svg.i:hover{ opacity: 1;
         justify-content: center; align-items: center;
         margin-top: 150px;
        
-        height: 1111px;
+        padding-bottom: 100px;
         border-radius: 20px;
       
         width: 80%;
         background-color: white;
-    }
+    } 
+    
   
     .donde p{ 
        
@@ -505,19 +519,21 @@ svg.i:hover{ opacity: 1;
         width: 89%;
     }
     .hobbies{ 
+
         flex-direction: column;
         display: flex;
         justify-content: center; align-items: center;
         margin-top: 150px;
-       
-        height: 1500px;
+       margin-bottom: 150px;
+        height: 2500px;
         border-radius: 20px;
+        padding-bottom: 100px;
       
         width: 80%;
         background-color: white;
     }
     .roller{
-        
+        margin-bottom: 25px;
         box-shadow: -4px 6px 5px 0px #607d8b63;
         padding-right: 20px;
         border-radius: 20px;
@@ -547,6 +563,67 @@ svg.i:hover{ opacity: 1;
         margin-bottom: 25px;
         margin-left: 20px;
     }
+    .club{
+        box-shadow: -4px 6px 5px 0px #607d8b63;
+        padding-right: 20px;
+        border-radius: 20px;
+        padding-left: 20px;
+        width: 89%;
+    }
+   .lectura{
+        width: 33.3%;
+       
+        position: relative;
+    
+        
+    }
+    .sinopsis{
+    height: 100%;
+    width: 100%;
+     position: relative;
+    perspective: 1000px;
+   }
+    .sinopsis .libro{
+        background-image: url("https://www.siruela.com/libros/grandes/9788498412093_L38_04_l.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        width: 460px;
+        box-shadow: -4px 6px 5px 0px #607d8b63;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        position: relative;
+        transition-property: all;
+        transition-timing-function: linear;
+        transition-duration: 1s;
+    }
+     .sinopsis .resumen{
+        
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: 700px;
+        width: 460px;
+        left: 0px;
+        top: 0px;
+        border-radius: 20px;
+        transition-property: all;
+        transition-timing-function: linear;
+        transition-duration: 1s;
+        transform-origin: center;
+        backface-visibility: hidden;
+        transform: rotateY(-180deg);
+        background-color: #f0eba8;
+    }
+    .sinopsis:hover .libro{
+        transform: rotateY(180deg);
+    }
+    .sinopsis:hover .resumen{
+        transform: rotateY(0deg);
+    }
+
+    
     
 
 
