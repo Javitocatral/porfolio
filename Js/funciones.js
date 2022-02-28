@@ -37,7 +37,7 @@ $(".rosa").click(function(){
      
       $(".azul").toggleClass("grande");
       $(".rosa").removeClass("grande");
-   $(".amarillo").removeClass("grande");
+      $(".amarillo").removeClass("grande");
        $(".proyectos").toggleClass("abierto");
        $(".yo").removeClass("abierto");
        $(".cv").removeClass("abierto");
@@ -88,6 +88,8 @@ $(".rosa").click(function(){
       })
       
  
+   $(".trabajo").click(function(){
 
+})
 
 });

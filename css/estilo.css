@@ -285,7 +285,7 @@ svg.i:hover{ opacity: 1;
         height: 40%;
     }
     .yo .contenido h1{ margin:0px ;
-        font-size: 150px;
+        font-size: 100px;
         color:#F2EC94 ;
         font-family: Big Shoulders Stencil Text;
     }
@@ -296,7 +296,7 @@ svg.i:hover{ opacity: 1;
     }
     .cv .contenido h1{ 
         margin:0px ;
-        font-size: 150px;
+        font-size: 100px;
         color:#F291C7;
         font-family: Big Shoulders Stencil Text;
         
@@ -309,7 +309,7 @@ svg.i:hover{ opacity: 1;
     
     .proyectos .contenido h1{ 
         margin:0px ;
-        font-size: 150px;
+        font-size: 100px;
         color:#5EF2E3 ;
         font-family: Big Shoulders Stencil Text;
     }
@@ -475,17 +475,22 @@ svg.i:hover{ opacity: 1;
         width: 50%;
     }
     .imagen{
-       
+       margin-left: 30px;
         padding-right: 20px;
         border-radius: 20px;        
-        box-shadow:  4px 6px 5px 0px #607d8b63;
-        background-image: url("../img/yo.jpg");
-        width: 50%;
+        box-shadow:  -4px 6px 5px 0px #607d8b63;
+        
+        width: 40%;
         
         background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
         padding: 20px;
+    }
+    .carousel-item img{
+        border-radius: 20px;
+        height: 900px;
+        
     }
     
     .donde{flex-direction: column;
@@ -630,17 +635,21 @@ svg.i:hover{ opacity: 1;
         margin-top: 150px;
         background-color: white;
         width: 80%;
-        height: 1111px;
+        
         margin-bottom: 150px;
     }
     .trabajo{margin: 10px;
         border-radius: 20px;
-        width: 47%;
+        width: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color:#f1c8df;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color:white;
         box-shadow:  -4px 6px 5px 0px #607d8b63;
+    }
+    .trabajo:hover{
+      color: white;
+        background-color:#F291C7 ;
     }
 
     .cabecera{ 
@@ -650,31 +659,38 @@ svg.i:hover{ opacity: 1;
         width: 100%;
 
     }
-    .cabecera-2{flex-wrap:wrap;
-        display: flex;
-        justify-content: center;
-        width: 100%;
+    .cabecera-2{
+     
+        
+        width: 50%;
         margin-bottom: 50px;
         margin-left: 25px;
         margin-right: 25px;
     }
     .foto{
-        margin: 50px 50px 50px 0px;
-        border-radius: 20px;        
+         display: flex;
+         justify-content: center;
         box-shadow:  -4px 6px 5px 0px #607d8b63;
-        background-image: url("../img/yo.jpg");
+        background-color: #e3e8eb;
         width: 50%;
-        
-        background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+        margin: 25px;
+    border-radius: 20px;
         padding: 20px; 
+    }
+    .foto img{
+        border-radius: 20px;
+        width:500px;
+        height: 700px;
     }
     .trabajo h2{
         padding: 20px;
         margin: 0%; text-align: center;
         font-size: 50px;
         font-weight: 800;
+    }
+    .vitae{
+        
+        position: relative;
     }
     .conteido-3{
         width: 50%;
@@ -684,6 +700,60 @@ svg.i:hover{ opacity: 1;
        padding-left: 80px;
         font-size: 50px;
     }
+    .info{
+        margin-bottom: 50px;
+        margin-left: 25px;
+        margin-right: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .informacion{
+        position:relative;
+        height:450px;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow:  -4px 6px 5px 0px #607d8b63;
+        background-color: white;
+    }
+.datos{ top: 0px;
+    position: absolute;
+    opacity: 0;
+}
+.mostrar{
+    opacity: 1;
+}
+.otro{
+    padding-right: 100px;
+    padding-top: 100px;
+}
+.trabajo-3{
+    padding: 25px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   background-color: white;
+border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+.derecha{
+    padding: 50px;
+     width: 80%;
+    flex-direction: row;
+    align-items: flex-start;
+    display: flex;
+    justify-content: start;
+}
+.izquierda{
+    width: 80%;
+    align-items: flex-end;
+display: flex;
+justify-content: flex-end;
+}
+
 
     
     
