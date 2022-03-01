@@ -11,9 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: aparece;
-   animation-duration: 1s;
-   animation-timing-function: linear;
+    
   
 }
 .fondo{width: 100%;
@@ -63,7 +61,7 @@ body{
     animation-duration: 0.8s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay:1s;
+    
 }
 .circulo{ display: flex;
     justify-content: center;
@@ -78,7 +76,7 @@ body{
     animation-duration: 0.8s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay:1.6s;
+    animation-delay:0.6s;
    
 }
 .triangulo_1, .triangulo{
@@ -96,7 +94,7 @@ body{
     animation-duration:0.8s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay:2.4s;
+    animation-delay:1.2s;
 }
 .figuras{ transition-duration: 1s;
     transition-property: all;
@@ -137,7 +135,7 @@ body{
     position: absolute;
     animation-name: sale;
     animation-duration: 1s;
-    animation-delay: 2.9s;
+    animation-delay: 1.8s;
     animation-fill-mode:both ;
     border-radius: 20px;
    
@@ -322,17 +320,7 @@ svg.i:hover{ opacity: 1;
         text-decoration: none;
         color:#F2EC94;
     }
-    @keyframes aparece{
-        0%{
-        
-            transform: scale(0);
-        }
-        100%{
-            transform: scale(1);
-
-        }
-
-    }
+  
     @keyframes late{
         0%{
             transform: scale(1) rotate(45deg);
@@ -426,6 +414,12 @@ svg.i:hover{ opacity: 1;
         
 
     }
+    .personal-2 h5{
+        margin: 0%;
+       padding-left: 80px;
+        font-size: 50px;
+        padding-bottom: 40px;
+    }
     .titulo{ display: flex;
         justify-content: space-between;
        
@@ -445,7 +439,7 @@ svg.i:hover{ opacity: 1;
     }
      .textito {
         width: 50%;
-        padding: 100px;
+        padding: 100px 100px 60px;
         font-size: 100px;
        
     }
@@ -480,7 +474,7 @@ svg.i:hover{ opacity: 1;
         border-radius: 20px;        
         box-shadow:  -4px 6px 5px 0px #607d8b63;
         
-        width: 40%;
+        width: 50%;
         
         background-repeat: no-repeat;
       background-position: center;
@@ -489,7 +483,7 @@ svg.i:hover{ opacity: 1;
     }
     .carousel-item img{
         border-radius: 20px;
-        height: 1000px;
+        object-fit: cover;
         
     }
     
@@ -516,12 +510,22 @@ svg.i:hover{ opacity: 1;
        margin: 50px;
         border-radius: 20px;
     }
-    .texto-2{
+    .texto-2{display: flex;
         box-shadow: -4px 6px 5px 0px #607d8b63;
-        padding-right: 20px;
+        padding:40px;
         border-radius: 20px;
-        padding-left: 20px;
-        width: 89%;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .texto-2 img{
+        padding-left: 15px;
+        width: 50%;
+        object-fit: cover;
+        height: 165px;
+    }
+    .texto-2.club-2 p{
+        padding: 50px;
+        font-size: 20px;
     }
     .hobbies{ 
 
@@ -529,8 +533,8 @@ svg.i:hover{ opacity: 1;
         display: flex;
         justify-content: center; align-items: center;
         margin-top: 150px;
-       margin-bottom: 150px;
-        height: 2500px;
+         margin-bottom: 150px;
+        
         border-radius: 20px;
         
         width: 80%;
@@ -561,7 +565,7 @@ svg.i:hover{ opacity: 1;
         margin-left: 20px;
     }
     .contenido-2 .lista{
-        width: 33%;
+        width:50%;
         box-shadow: -4px 6px 5px 0px #607d8b63;
         border-radius: 20px;
         margin-bottom: 25px;
@@ -578,7 +582,7 @@ svg.i:hover{ opacity: 1;
         position: relative;
     }
    .lectura{ z-index: -1;
-        width: 33.3%;
+        width: 50%;
        position:absolute;
        top: 0px;
        opacity: 0;
@@ -665,6 +669,7 @@ svg.i:hover{ opacity: 1;
    }
     
      .sinopsis .resumen{
+         padding: 20px;
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -687,11 +692,12 @@ svg.i:hover{ opacity: 1;
     .sinopsis:hover .resumen{
         transform: rotateY(0deg);
     }
-    li.book{
+    li.book{ transition-duration: 0.5s;
         padding: 35px;
         font-size: 35px;
     }
     li.book:hover{
+        transform: scale(1.1); border-radius: 20px;
         color: white;
         background-color: #F2EC94;
     }
@@ -707,6 +713,17 @@ svg.i:hover{ opacity: 1;
         
         margin-bottom: 150px;
     }
+    .cv-2 a{ 
+        border-radius: 20px;
+        background-color: #F291C7 ;
+        color: #010326;
+        font-size: 30px;
+        
+        padding: 0px 50px 10px;
+    }
+    .cv-2 a p{
+        margin: 0%;
+    }
     .trabajo{margin: 10px;
         border-radius: 20px;
         width: 100%;
@@ -717,7 +734,9 @@ svg.i:hover{ opacity: 1;
         box-shadow:  -4px 6px 5px 0px #607d8b63;
     }
     .trabajo:hover{
-      color: white;
+        transform: scale(1.1);
+        transition-duration: 0.3s;
+        color: white;
         background-color:#F291C7 ;
     }
 
@@ -743,8 +762,9 @@ svg.i:hover{ opacity: 1;
         background-color: #e3e8eb;
         width: 50%;
         margin: 25px;
-    border-radius: 20px;
+        border-radius: 20px;
         padding: 20px; 
+        object-fit: cover;
     }
     .foto img{
         border-radius: 20px;
@@ -778,20 +798,32 @@ svg.i:hover{ opacity: 1;
         justify-content: center;
         align-items: center;
     }
+    .curriculum{
+        position: relative;
+    }
     .informacion{
-        position:relative;
+        position:absolute;
         height:450px;
         width: 100%;
         border-radius: 20px;
         box-shadow:  -4px 6px 5px 0px #607d8b63;
         background-color: white;
+        top: 0px;
+        opacity: 0;
+        transition-duration: 1s;
     }
-.datos{ top: 0px;
-    position: absolute;
-    opacity: 0;
+ .informacion.experiencia{ 
+     
+    position:relative;
+   
+} 
+.informacion p{
+    padding: 30px;
+    font-size: 20px;
 }
-.mostrar{
+.curriculum .informacion.active{
     opacity: 1;
+    z-index: 10;
 }
 .otro{
     padding-right: 100px;
@@ -819,8 +851,8 @@ border-radius: 50%;
 .izquierda{
     width: 80%;
     align-items: flex-end;
-display: flex;
-justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 

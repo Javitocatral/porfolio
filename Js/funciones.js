@@ -96,5 +96,12 @@ console.log(id)
 $("."+id).addClass("active")
 
 })
+$(".trabajo").click(function(){
+   console.log("clic trabajo")
+   $(".informacion").removeClass("active")
+  var id=$(this).attr("id")
+  console.log(id)
+  $("."+id).addClass("active")
 
-});
+})
+})
