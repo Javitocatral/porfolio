@@ -88,7 +88,12 @@ $(".rosa").click(function(){
       })
       
  
-   $(".trabajo").click(function(){
+   $(".book").click(function(){
+console.log("clic en book")
+$(".lectura").removeClass("active")
+var id=$(this).attr("id")
+console.log(id)
+$("."+id).addClass("active")
 
 })
 
