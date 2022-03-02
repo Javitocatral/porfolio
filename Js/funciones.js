@@ -50,7 +50,7 @@ $(".rosa").click(function(){
       $(".botonamarillo").click(function(){
          console.log("clic botonamarillo")
          $(".amarillo").addClass("grande");
-         $(".yo").addClass("abierto");
+         $(".yo").toggleClass("abierto");
          $(".cv").removeClass("abierto");
          $(".proyectos").removeClass("abierto")
          $(".rosa").addClass("oculto");
@@ -63,7 +63,7 @@ $(".rosa").click(function(){
       $(".botonrosa").click(function(){
          console.log("clic botonamarillo")
          $(".rosa").addClass("grande");
-         $(".cv").addClass("abierto");
+         $(".cv").toggleClass("abierto");
          $(".yo").removeClass("abierto");
          $(".proyectos").removeClass("abierto")
          $(".amarillo").addClass("oculto");
@@ -76,7 +76,7 @@ $(".rosa").click(function(){
       $(".botonazul").click(function(){
          console.log("clic botonamarillo")
          $(".azul").addClass("grande");
-         $(".proyectos").addClass("abierto");
+         $(".proyectos").toggleClass("abierto");
          $(".cv").removeClass("abierto");
          $(".yo").removeClass("abierto")
          $(".rosa").addClass("oculto");
@@ -103,5 +103,25 @@ $(".trabajo").click(function(){
   console.log(id)
   $("."+id).addClass("active")
 
+})
+
+$(".boton").click(function(){
+   console.log("clic en boton") 
+   $("#video").css("opacity", 0)
+
+   setTimeout(() => {
+      $("#video").animate( {
+         opacity:1
+      }, 500 )
+   }, 300);
+
+
+   var src= $(this).data("src")
+   console.log(src)
+   $("#video").attr("src", src)
+
+   
+  
+ 
 })
 })
