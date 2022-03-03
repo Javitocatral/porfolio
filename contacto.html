@@ -39,27 +39,28 @@
         
         <div class="formulario">
             <div class="rellena">
-                <form action="" class="escribeme">
+                <!-- action: donde enviamos los datos: si esta vacio se envia  al misma pagina donde esta el formulario -->
+                <form class="escribeme" action="enviarmail.php" method="POST">
                     <div class="uno">
                         <h1>Cotratame!</h1>
                     </div>
                     <div class="dos-1">
                         <label for="nombre">Tu nombre</label>
-                        <input id="nombre" type="text" placeholder="Escríbe tu nombre">
+                        <input id="nombre" name="nombre" type="text" placeholder="Escríbe tu nombre">
                         <div class="linea"></div>
                     </div>
                     <div class="dos-1">
                                 <label for="email">Tu email</label>
-                                <input id="email" type="email" placeholder="Escríbe tu email">
+                                <input id="email" name="email" type="email" placeholder="Escríbe tu email">
                                 <div class="linea"></div>
                     </div>
                     <div class="dos-1">
                         <label for="consulta">Consulta</label>
-                        <textarea name="" id="consulta" cols="" rows="" placeholder="Escribe tu mensaje"></textarea>
+                        <textarea  id="consulta" name="mensaje" cols="" rows="" placeholder="Escribe tu mensaje"></textarea>
                         <div class="linea"></div>
                     </div>
                     <div class="dos-1 centrado">
-                        <input id="boton-2" type="file" name="boton">
+                        <input id="boton-2" type="submit" name="boton">
                    
                     </div>
             </div>
