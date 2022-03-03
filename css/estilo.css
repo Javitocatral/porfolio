@@ -124,7 +124,7 @@ body{
 
 .nav{ z-index: 99;
     display: flex;
-    top: -100px;
+    top: -99px;
     align-items: center;
     justify-content: space-between;
     width:100%;
@@ -145,15 +145,36 @@ body{
 .cuadrado h2{
     transform: rotate(-45deg);
 }
-.espacio h2{
-    opacity: 0;
-    font-size: 50px;
+.espacio h2{padding: 5px;
+    border-radius: 20px;
+        opacity: 0;
+        font-size: 50px;
         color:#010326 ;
         font-family: Big Shoulders Stencil Text;
         background-color: white;
         transition: linear;
         transition-property: all;
         transition-duration: 0.5s;
+}
+.espacio .azul h2{
+    padding: 5px;
+    left: -40px;
+    top: 75px;
+    border-radius: 20px;
+    height: 67px;
+    width: 207px;
+    display: flex;
+    text-align: center;
+    opacity: 0;
+    font-size: 50px;
+    color:#010326 ;
+    font-family: Big Shoulders Stencil Text;
+    background-color: white;
+    transition: linear;
+    transition-property: all;
+    transition-duration: 0.5s;
+    z-index: 101;
+    position: absolute;
 }
 .espacio h2:hover{
     opacity: 1;
@@ -285,7 +306,7 @@ svg.i:hover{ opacity: 1;
     }
     .yo .contenido h1{ margin:0px ;
         font-size: 100px;
-        color:#F2EC94 ;
+        
         font-family: Big Shoulders Stencil Text;
     }
     .yo .contenido a:hover{
@@ -300,7 +321,7 @@ svg.i:hover{ opacity: 1;
         font-family: Big Shoulders Stencil Text;
         
     }
-    .cv .contenido h1:hover{
+    .cv .contenido a:hover{
         color:#010326;
         background-color: #F291C7;
         transition-duration: 0.5s;
@@ -312,7 +333,7 @@ svg.i:hover{ opacity: 1;
         color:#5EF2E3 ;
         font-family: Big Shoulders Stencil Text;
     }
-    .proyectos .contenido h1:hover{
+    .proyectos .contenido a:hover{
         color:#010326;
         background-color: #5EF2E3;
         transition-duration: 0.5s;
@@ -321,7 +342,14 @@ svg.i:hover{ opacity: 1;
         text-decoration: none;
         color:#F2EC94;
     }
-  
+    .cv a{
+        text-decoration: none;
+        color:#F291C7;
+    }
+    .proyectos a{
+        text-decoration: none;
+        color:#5EF2E3;
+    }
     @keyframes late{
         0%{
             transform: scale(1) rotate(45deg);
@@ -786,7 +814,9 @@ svg.i:hover{ opacity: 1;
         font-weight: 800;
     }
     .vitae{
-        
+        margin-left: 10px;
+        border-radius: 20px;
+        box-shadow:  -4px 6px 5px 0px #607d8b63;
         position: relative;
     }
     .contenido-3{
@@ -799,7 +829,6 @@ svg.i:hover{ opacity: 1;
         font-size: 50px;
     }
     .info{
-        margin-bottom: 50px;
         margin-left: 25px;
         margin-right: 100px;
         width: 100%;
@@ -834,15 +863,17 @@ svg.i:hover{ opacity: 1;
     opacity: 1;
     z-index: 10;
 }
-
+.descargar{
+    padding: 0px 50px 25px;
+}
 .trabajo-3{
     padding: 25px;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-   background-color: white;
-border-radius: 50%;
+    background-color: white;
+    border-radius: 50%;
     width: 500px;
     height: 500px;
 }
@@ -878,10 +909,10 @@ border-radius: 50%;
     justify-content: center;
     display: flex;
     background-color: #a6bbd0;
-
     height: 100vh;
     width: 100vw;
     z-index: -100;
+    position: fixed;
 }
 
 .cambio{
@@ -892,14 +923,14 @@ border-radius: 50%;
 }
 .cuadrado.cambio{
     animation-name: late-cuadrado;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 3;
     animation-timing-function: linear;
     
 }
 .circulo.cambio{
     animation-name: late-circulo;
-    animation-duration: 3s;
+    animation-duration:2s;
     animation-iteration-count: 3;
     animation-timing-function: linear;
    
@@ -908,14 +939,14 @@ border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: -100;
     transform: rotateZ( 
 -135deg);
     position: relative;
     width: 100px;
     height: 100px;
     animation-name: latetriangulo-2;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 3;
     animation-timing-function: linear;
     
@@ -924,10 +955,13 @@ border-radius: 50%;
     0%{
         transform: scale(1) rotate(45deg);
     }
-  12.5%{
-    transform: scale(2) rotate(45deg);
+    8.25%{
+        transform: scale(2) rotate(45deg);
+    }
+  16.5%{
+    transform: scale(1) rotate(45deg);
   }
-  25%{
+  33%{
     transform: scale(1) rotate(45deg);
   }
 
@@ -939,15 +973,14 @@ border-radius: 50%;
     0%{
         transform: scale(1) rotate(45deg);
     }
-   
-    25%{
+   16.5%{
         transform: scale(1) rotate(45deg);
-    }
-    37.5%{
+   }
+    24.75%{
         transform: scale(2) rotate(45deg);
     }
-    50%{
-        transform: scale(1) rotate(45deg);;
+    33%{
+        transform: scale(1) rotate(45deg);
     }
     
     100%{
@@ -958,17 +991,17 @@ border-radius: 50%;
     0%{
         transform: scale(1)  rotateZ(-135deg);
     }
-    
-    
-    50%{
+    24.75%{
         transform: scale(1) rotateZ(-135deg);
     }
-    62.5%{
+    33%{
         transform: scale(2) rotateZ(-135deg);
     }
-    75%{
-        transform: scale(1) rotateZ(-135deg); 
+    41.25%{
+        transform: scale(1) rotateZ(-135deg);
     }
+  
+    
     
     100%{
         transform: scale(1) rotateZ(-135deg);
@@ -980,7 +1013,7 @@ border-radius: 50%;
    padding: 50px;
     padding-bottom: 100px;
     border-radius: 20px;
-   margin-bottom: 150px;
+    margin-bottom: 150px;
     width: 80%;
     background-color: white;
 }
@@ -1025,7 +1058,7 @@ textarea{
     border: none;
     height: 100px;
     box-shadow:  -4px 6px 5px 0px #607d8b63;
- border-radius: 20px;
+    border-radius: 20px;
 }
 .dos-1{
     
@@ -1077,7 +1110,7 @@ textarea{
 .redes a{ 
     color: #010326;
     padding: 15px;
-font-size: 60px;
+    font-size: 60px;
 }
 
 
