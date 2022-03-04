@@ -62,6 +62,7 @@ body{
     animation-duration: 0.8s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
+    animation-delay: 1s;
     
 }
 .circulo{ display: flex;
@@ -77,7 +78,7 @@ body{
     animation-duration: 0.8s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay:0.6s;
+    animation-delay:1.6s;
    
 }
 .triangulo_1, .triangulo{
@@ -95,7 +96,7 @@ body{
     animation-duration:0.8s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay:1.2s;
+    animation-delay:2.2s;
 }
 .figuras{ transition-duration: 1s;
     transition-property: all;
@@ -584,12 +585,12 @@ svg.i:hover{ opacity: 1;
         
         
     }
-    .contenido-2{
+    .contenido-2{justify-content: center;
         display: flex;
     }
     .contenido-2 video{
         height: 600px;
-        width: 50%;
+        width: 30%;
         box-shadow: -4px 6px 5px 0px #607d8b63;
         border-radius: 20px;
         margin-bottom: 25px; 
@@ -643,11 +644,12 @@ svg.i:hover{ opacity: 1;
        position:absolute;
        top: 0px;
        opacity: 0;
+       
      }
     .lectura.amos{
          position: relative;
      }
-    .sinopsis{margin: 0px 0px 25px 20px;
+    .sinopsis{
     height: 100%;
     width: 100%;
      position: relative;
@@ -658,7 +660,7 @@ svg.i:hover{ opacity: 1;
         background-repeat: no-repeat;
         background-size: cover;
         
-        width:120%;
+       
         box-shadow: -4px 6px 5px 0px #607d8b63;
         border-radius: 20px;
         position: relative;
@@ -696,8 +698,8 @@ svg.i:hover{ opacity: 1;
         display: flex;
         flex-direction: column;
         position: absolute;
-        height: 660px;
-        width: 480px;
+        height: 100%;
+       
         left: 0px;
         top: 0px;
         border-radius: 20px;
@@ -786,7 +788,7 @@ svg.i:hover{ opacity: 1;
     .cabecera-2{
      
         
-        width: 50%;
+        width: 30%;
         margin-bottom: 50px;
         margin-left: 25px;
         margin-right: 25px;
@@ -813,15 +815,26 @@ svg.i:hover{ opacity: 1;
         font-size: 50px;
         font-weight: 800;
     }
-    .vitae{
+    .vitae{ 
+        
+        padding: 50px;
+        width: 50%;
         margin-left: 10px;
         border-radius: 20px;
         box-shadow:  -4px 6px 5px 0px #607d8b63;
         position: relative;
     }
     .contenido-3{
-        padding: 100px 50px;
-        width: 50%;
+        justify-content: center;
+    display: flex;
+    padding: 100px 50px;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    }
+    .contenido-3 .textito-2{
+        font-size: 150px;
+        text-align: center;
     }
     .contenido-3 h5{
         margin: 0%;
@@ -839,7 +852,9 @@ svg.i:hover{ opacity: 1;
     .curriculum{
         position: relative;
     }
-    .informacion{
+    .informacion{ display: flex;
+        justify-content: center;
+        align-items: center;
         position:absolute;
         height:450px;
         width: 100%;
@@ -855,13 +870,31 @@ svg.i:hover{ opacity: 1;
     position:relative;
    
 } 
+.informacion li{
+    margin: 0px;
+    padding: 10px 25px;
+    font-size: 20px;
+}
 .informacion p{
-    padding: 30px;
+    margin: 0px;
+    padding: 10px 25px;
     font-size: 20px;
 }
 .curriculum .informacion.active{
     opacity: 1;
     z-index: 10;
+}
+.fecha{
+    width: 40%;
+}
+.fecha ul{
+margin: 0px;
+}
+.tipo{
+    width: 33%;
+}
+.ciudad{
+    width: 23%;
 }
 .descargar{
     padding: 0px 50px 25px;
@@ -911,8 +944,9 @@ svg.i:hover{ opacity: 1;
     background-color: #a6bbd0;
     height: 100vh;
     width: 100vw;
-    z-index: -100;
+    z-index: 100;
     position: fixed;
+    
 }
 
 .cambio{
@@ -922,86 +956,58 @@ svg.i:hover{ opacity: 1;
     
 }
 .cuadrado.cambio{
-    animation-name: late-cuadrado;
-    animation-duration: 2s;
-    animation-iteration-count: 3;
+    animation-name: late-2;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
     animation-timing-function: linear;
-    
+    animation-delay: 0s;
+  
 }
 .circulo.cambio{
-    animation-name: late-circulo;
-    animation-duration:2s;
-    animation-iteration-count: 3;
+    animation-name: late-2;
+    animation-duration:0.9s;
+    animation-iteration-count: 1;
     animation-timing-function: linear;
-   
+   animation-delay: 0.3s;
 }
 .triangulo_1.cambio, .triangulo.cambio{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -100;
+    z-index: 10;
     transform: rotateZ( 
 -135deg);
     position: relative;
     width: 100px;
     height: 100px;
     animation-name: latetriangulo-2;
-    animation-duration: 2s;
-    animation-iteration-count: 3;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
     animation-timing-function: linear;
-    
+    animation-delay: 0.6s;
 }
-@keyframes late-cuadrado{
+@keyframes late-2{
     0%{
         transform: scale(1) rotate(45deg);
     }
-    8.25%{
-        transform: scale(2) rotate(45deg);
-    }
-  16.5%{
-    transform: scale(1) rotate(45deg);
+    
+  50%{
+    transform: scale(2) rotate(45deg);
   }
-  33%{
-    transform: scale(1) rotate(45deg);
-  }
+ 
+    100%{
+        transform: scale(1) rotate(45deg);
+    }  
+}
 
-    100%{
-        transform: scale(1) rotate(45deg);
-    }  
-}
-@keyframes late-circulo{
-    0%{
-        transform: scale(1) rotate(45deg);
-    }
-   16.5%{
-        transform: scale(1) rotate(45deg);
-   }
-    24.75%{
-        transform: scale(2) rotate(45deg);
-    }
-    33%{
-        transform: scale(1) rotate(45deg);
-    }
-    
-    100%{
-        transform: scale(1) rotate(45deg);
-    }  
-}
 @keyframes latetriangulo-2{
     0%{
         transform: scale(1)  rotateZ(-135deg);
     }
-    24.75%{
-        transform: scale(1) rotateZ(-135deg);
-    }
-    33%{
+    
+    50%{
         transform: scale(2) rotateZ(-135deg);
     }
-    41.25%{
-        transform: scale(1) rotateZ(-135deg);
-    }
-  
-    
     
     100%{
         transform: scale(1) rotateZ(-135deg);

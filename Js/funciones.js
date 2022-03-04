@@ -124,4 +124,11 @@ $(".boton").click(function(){
   
  
 })
+
+})
+$(window).on("load", function(){
+
+setTimeout(function(){
+   $(".carga").fadeOut(500);
+}, 1200)
 })
