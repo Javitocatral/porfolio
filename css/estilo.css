@@ -258,6 +258,7 @@ svg.i:hover{ opacity: 1;
        transition-property: all;
         
     }
+ 
     .amarillo.grande{
         transform: scale(1.5) translateX(700px);
     }
@@ -1014,7 +1015,8 @@ margin: 0px;
     }  
 }
 .formulario{ display: flex;
-    justify-content: center; align-items: center;
+    justify-content: center; 
+    align-items: center;
     margin-top: 150px;
    padding: 50px;
     padding-bottom: 100px;
@@ -1036,6 +1038,14 @@ margin: 0px;
     border-radius: 20px;
     
 } 
+.formulario-2{
+    width: 100%;
+}
+.exito{
+    box-shadow:  -4px 6px 5px 0px #607d8b63;
+    border-radius: 20px;
+    width: 100%;
+}
 .escribeme h1{ margin: 0%;
     padding: 30px 30px 30px;
 }
@@ -1078,10 +1088,16 @@ textarea{
 .dir{
     width: 50%;
 }
-.rellena{
+.rellena{display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
+    
 } 
-
+.exito .mensajes-1 p{
+    font-size: 30px;
+    padding: 15px;
+}
 #boton-2{
     margin-bottom: 15px;
     width: 60%;

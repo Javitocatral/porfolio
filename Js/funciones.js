@@ -1,21 +1,22 @@
 $(function(){
    
-    
+    if ( window.history.replaceState) {
+       window.history.replaceState( null, null, window.location.href);
+    }
 
 $(".amarillo").click(function(){
 console.log("clic cuadrado");
 
    $(".amarillo").toggleClass("grande");
-  $(".rosa").removeClass("grande");
-  $(".azul").removeClass("grande");
+   $(".rosa").removeClass("grande");
+   $(".azul").removeClass("grande");
    $(".yo").toggleClass("abierto");
- $(".cv").removeClass("abierto")
- $(".proyectos").removeClass("abierto")
-   
+   $(".cv").removeClass("abierto")
+   $(".proyectos").removeClass("abierto")
+
    $(".rosa").toggleClass("oculto");
    $(".azul").toggleClass("oculto");
    
-  
 });
 $(".rosa").click(function(){
   
@@ -50,14 +51,11 @@ $(".rosa").click(function(){
       $(".botonamarillo").click(function(){
          console.log("clic botonamarillo")
          $(".amarillo").addClass("grande");
+
          $(".yo").toggleClass("abierto");
          $(".cv").removeClass("abierto");
          $(".proyectos").removeClass("abierto")
-         $(".rosa").addClass("oculto");
-         $(".azul").addClass("oculto");
-         $(".amarillo").removeClass("oculto");
-         $(".rosa").removeClass("grande");
-         $(".azul").removeClass("grande");
+        
 
       })
       $(".botonrosa").click(function(){
@@ -66,11 +64,7 @@ $(".rosa").click(function(){
          $(".cv").toggleClass("abierto");
          $(".yo").removeClass("abierto");
          $(".proyectos").removeClass("abierto")
-         $(".amarillo").addClass("oculto");
-         $(".azul").addClass("oculto");
-         $(".rosa").removeClass("oculto");
-         $(".amarillo").removeClass("grande");
-         $(".azul").removeClass("grande");
+         
 
       })
       $(".botonazul").click(function(){
@@ -79,14 +73,66 @@ $(".rosa").click(function(){
          $(".proyectos").toggleClass("abierto");
          $(".cv").removeClass("abierto");
          $(".yo").removeClass("abierto")
-         $(".rosa").addClass("oculto");
-         $(".amarillo").addClass("oculto");
-         $(".azul").removeClass("oculto");
-         $(".rosa").removeClass("grande");
-         $(".amarillo").removeClass("grande");
+         
 
       })
+
+
+
+
+      $(".homeamarillo").click(function(){
+         console.log("clic en homeamarillo");
+        
+         if( $(".amarillo").hasClass("grande")){
+            $(".rosa").removeClass("oculto")
+            $(".azul").removeClass("oculto")
+         }else{
+            $(".rosa").addClass("oculto").removeClass("grande");
+            $(".azul").addClass("oculto").removeClass("grande");
+         }
+         $(".amarillo").toggleClass("grande").removeClass("oculto");
+
+         $(".yo").toggleClass("abierto");
+         $(".cv").removeClass("abierto");
+         $(".proyectos").removeClass("abierto")
+         
+      })
+
+
+      $(".homerosa").click(function(){
+         if( $(".rosa").hasClass("grande")){
+            $(".amarillo").removeClass("oculto")
+            $(".azul").removeClass("oculto")
+         }else{
+            $(".amarillo").addClass("oculto").removeClass("grande");
+            $(".azul").addClass("oculto").removeClass("grande");
+         }
+         $(".rosa").toggleClass("grande").removeClass("oculto");
+
+         $(".cv").toggleClass("abierto");
+         $(".yo").removeClass("abierto");
+         $(".proyectos").removeClass("abierto");
+      })
+
+      $(".homeazul").click(function(){
+         if( $(".azul").hasClass("grande")){
+            $(".amarillo").removeClass("oculto")
+            $(".rosa").removeClass("oculto")
+         }else{
+            $(".amarillo").addClass("oculto").removeClass("grande");
+            $(".rosa").addClass("oculto").removeClass("grande");
+         }
+         $(".azul").toggleClass("grande").removeClass("oculto");
+         $(".proyectos").toggleClass("abierto");
+         $(".yo").removeClass("abierto");
+         $(".cv").removeClass("abierto");
+           
+      });
+
       
+
+
+
  
    $(".book").click(function(){
 console.log("clic en book")

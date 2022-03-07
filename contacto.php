@@ -1,3 +1,57 @@
+
+
+<?php
+// vivne el form de contacto?
+    //  $_POST
+   
+//  imprimi algo sencillo por pantalla
+    
+    // imprimir cosas por pantala yarray y objetos
+   
+    $envioMail = false;
+    if( 
+    isset($_POST["nombre"]) && 
+    isset($_POST["email"]) &&
+    isset($_POST["mensaje"])
+    
+    ){  
+
+        // lo que hacemos si hay información enviada del form
+        
+        $nombre = $_POST["nombre"];
+        $email = $_POST["email"];
+        $mensaje = $_POST["mensaje"];
+        // receptor
+         $to = "javitocatral@gmail.com";
+        //  asunto
+        $subjet = "consulta de la web";
+        //  mensaje
+        $body = "<html>  
+                <heade>
+                <body> 
+                    <h1> Consulta en la web</h1>
+                    <p> $mensaje </p>
+                </body>
+                </heade>
+            </html>";
+    
+        // cabeceras de el correo 
+        $headers = "MIME-Version:1.0 \r\n";
+        $headers .= "From: $email \r\n ";
+        $headers .= "Content-type/html;charset=UTF-8 \r\n";
+       
+    
+        // true si envia correo Fslse si algo ha ido mal y no ha enviado correo
+        // $envioMail = mail($to, $subjet, $body, $headers);
+        $envioMail = true;
+        
+
+        }     
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,8 +103,12 @@
         
         <div class="formulario">
             <div class="rellena">
+                <?php
+                if( $envioMail==false ){
+                ?>
                 <!-- action: donde enviamos los datos: si esta vacio se envia  al misma pagina donde esta el formulario -->
-                <form class="escribeme" action="enviarmail.php" method="POST">
+                <div class="formulario-2">
+                <form class="escribeme" action="" method="POST">
                     <div class="uno">
                         <h1>Cotratame!</h1>
                     </div>
@@ -73,7 +131,24 @@
                         <input id="boton-2" type="submit" name="boton">
                    
                     </div>
+                </form></div>
+                   <?php
+                   }else{
+
+                   ?>
+                    
+                   
+                
+                    <div class="exito">
+                        <div class="mensajes-1">
+                           <p> Gracias por contactar conmigo en breve te respondere</p>
+                        </div>
+                    </div>
+                    <?php
+                         }
+                   ?>
             </div>
+           
             <div class="dir">
                 <h3 class="textito-3"> Javier Gascon Ruiz</h3>
                 <p> Dir: C/Ciuda real nº 9, 2º-puerta6</p>
@@ -85,7 +160,8 @@
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
-        </div>
+        </div> 
+       
         <div class="menu yo">
             <div class="contenido">
                 <h1> <a href="personal.html#soy">Quien soy</a></h1>
