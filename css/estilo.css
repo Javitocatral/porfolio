@@ -264,7 +264,7 @@ svg.i:hover{ opacity: 1;
         transform: scale(1.6) translateX(400px);
     }
     .azul.grande{
-        transform: scale(1.6) translateX(150px);
+        transform: scale(1.6) translateX(50px);
     }
    .oculto{ z-index: -1;
        transition-duration: 1s;
@@ -635,7 +635,7 @@ svg.i:hover{ opacity: 1;
     .entresijos{
         display: flex;
         justify-content: center;
-        width: 50%;
+        width: 30%;
         position: relative;
     }
    .lectura{ z-index: -1;
@@ -1133,22 +1133,16 @@ textarea{
     padding: 15px;
     font-size: 60px;
 }
-@media screen and (min-width: 1024px){
-    .cuadrado{
-        width: 200px;
-        height: 200px;
-    }
-    .circulo{
-        width: 200px;
-        height: 200px;
-    }
+@media screen and (max-width: 1500px){
     
-    .triangulo_1, .triangulo{
-        width: 200px;
-        height: 200px;
+    .figuras{
+        transform: scale(0.7);
     }
 
-   
+   .entresijos{
+       width: 50%;
+   }
+
     .amarillo.grande{
         transform: scale(1.25) translateX(600px);
     }
@@ -1164,6 +1158,21 @@ textarea{
      .cv .contenido h1{
         font-size: 70px;
     }
+    .info{
+        margin: 0px;
+    }
+    .vitae{padding: 20px;
+    width: 80%;
+    }
+    .fecha{
+        height: 80%;
+    }
+    .tipo{
+        width: 40%;
+    }
+    .informacion li{
+        padding: 12px 25px;
+    }
     .proyectos .contenido h1{
         font-size: 70px;
     }
@@ -1175,19 +1184,31 @@ textarea{
         height: 400px;
     }
 }
-@media (min-width:768px) and (max-width:1023px) {
-    .cuadrado{
-        width: 150px;
-        height: 150px;
+@media (min-width:768px) and (max-width:1274px) {
+    .negro{
+        width: 20px;
+        height: 50px;
+        border-right: 5px solid #de899d;
     }
-    .circulo{
-        width: 150px;
-        height: 150px;
+    .menu{
+        left: -48%;
+        width: 48%;
     }
-    
-    .triangulo_1, .triangulo{
-        width: 150px;
-        height: 150px;
+    .amarillo.grande{
+        transform: scale(0.7) translateX(550px);
+    }
+    .rosa.grande{
+        transform: scale(0.8) translateX(300px);
+    }
+    .azul.grande{
+        transform: scale(0.8)translateX(50px) ;
+    } 
+    .figuras{
+        transform: scale(0.5);
+    }
+    .espacio{
+        width: 200px;
+        height: 300px;
     }
     .yo .contenido h1{
         font-size: 65px;
@@ -1207,6 +1228,9 @@ textarea{
     .textito{
         font-size: 100px;
         
+    }
+    .entresijos{
+        width: 100%;
     }
     .cuadrado.peque{
         width: 100px;
@@ -1260,9 +1284,11 @@ textarea{
         padding: 0%;
     }
     li.boton{
+        font-size: 25px;
         padding: 10px;
     }
     li.book{
+        font-size: 25px;
         padding: 10px;
     }
     .contenido-3{
@@ -1272,10 +1298,15 @@ textarea{
         font-size: 75px;
     }
     .foto img{
-        width: 300px;
-        height: 520px;
+        width: 287px;
+        height: 465px;
+    }
+    .contenido-3 h5 {
+        font-size: 31px;
     }
     .info{
+        padding: 20px;
+        margin: 0px;
         display: flex;
         flex-direction: column;
     }
@@ -1291,19 +1322,39 @@ textarea{
         font-size: 25px;
     }
     .vitae{
+        padding: 20px;
         width: 100%;
+    }
+    .fecha{
+        width: 50%;
     }
     .triangulo_1_2{
         width: 100px;
         height: 100px;
     }
+    .derecha{
+        padding: 25px 0px;
+    }
+    .izquierda{
+        padding: 25px 0px;
+    }
     .trabajo-3{
         width: 300px;
         height: 300px;
     }
+    .dir p{
+       font-size: 25px;
+    }
+    .formulario{
+        margin-top: 75px;
+        padding: 20px;
+    }
+    .dos-1{
+        padding: 10px;
+    }
 }
 @media screen and (max-width:767px) {
-    .cuadrado{
+    /* .cuadrado{
         width: 100px;
         height:100px;
     }
@@ -1315,6 +1366,9 @@ textarea{
     .triangulo_1, .triangulo{
         width: 100px;
         height: 100px;
+    } */
+    .figuras{
+        transform: scale(0.3);
     }
     .yo .contenido h1{
         font-size: 40px;

@@ -66,13 +66,9 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <div class="carga">      
-        <div class="figuras amarillo ">
-            <div class="cuadrado cambio"></div>           
-        </div>
-        <div class="figuras rosa">
-            <div class="circulo cambio"></div>           
-        </div>    
+    <div class="carga">              
+            <div class="cuadrado cambio"></div>                  
+            <div class="circulo cambio"></div>                      
             <svg class="triangulo_1 cambio"> <polygon points= "0,0 100,0 100,100" fill="#5EF2E3"></polygon></svg>          
      </div>
     <div class="menphys">
@@ -83,13 +79,7 @@
                 <div class="iconos tres botonazul"><svg class="i"> <polygon points= "0,0 40,0 40,40" fill="#5EF2E3">  </polygon></svg></div>
             </div>
             <div class="parte_2" >
-                <div class="buscador">
-                    <form action="">
-                       
-                         <input type="search" id="buscador" name="buscador">
-                        <input id="boton" type="submit" value="buscar">
-                    </form>
-                </div>
+               
                 <div class="casa"><a href="index.html"> <i class="fa-brands fa-houzz"></a></i></div>
                 
             </div>
@@ -173,7 +163,7 @@
                 <h1><a href="personal.html#hobbies"> Mis hobbies</a></h1>
             </div>
             <div class="contenido mas">
-                <h1><a href="contacto.html"> Contacta</a></h1>
+                <h1><a href="contacto.php"> Contacta</a></h1>
             </div>
            
         </div>
@@ -215,6 +205,6 @@
         </div>
         
     </div>
-    <script src="js/funciones.js"></script>
+    <script src="Js/funciones.js"></script>
 </body>
 </html>
