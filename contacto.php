@@ -71,7 +71,7 @@
             <div class="circulo cambio"></div>                      
             <svg class="triangulo_1 cambio"> <polygon points= "0,0 100,0 100,100" fill="#5EF2E3"></polygon></svg>          
      </div>
-    <div class="menphys">
+    <div class="menphys-2">
         <div class="nav-2">
             <div class="parte_1">
                 <div class="iconos uno botonamarillo"><i class="fa-solid fa-square-full"></i></div>
@@ -175,7 +175,7 @@
                 <h1><a href=""> Experiencia laboral</a></h1>
             </div>
             <div class="contenido">
-                <h1><a href=""> Educacion academinca</a</h1>
+                <h1><a href=""> Estudios</a></h1>
             </div>
             <div class="contenido">
                 <h1><a href=""> Aptitude</a></h1>

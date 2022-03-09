@@ -400,6 +400,14 @@ svg.i:hover{ opacity: 1;
         background-image: url("../img/descarga.jfif");
        
     }
+    .menphys-2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../img/basic.png");
+      
+    }
     .nav-2{
     
         z-index: 99;
@@ -770,6 +778,12 @@ svg.i:hover{ opacity: 1;
     .cv-2 a p{
         margin: 0%;
     }
+    .textito-3-cv{
+        font-size: 60px;
+    }
+    .dir-cv a{
+        background-color: white;
+    }
     .trabajo{
         cursor: pointer;
         margin: 10px;
@@ -834,6 +848,7 @@ svg.i:hover{ opacity: 1;
         box-shadow:  -4px 6px 5px 0px #607d8b63;
         position: relative;
     }
+    .vit
     .contenido-3{
         justify-content: center;
     display: flex;
@@ -880,6 +895,19 @@ svg.i:hover{ opacity: 1;
     position:relative;
    
 } 
+.actitudes-2{
+   
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns:repeat(2fr) ;
+   
+}
+.informacion .actitudes-2 p{
+   
+    font-size: 25px;
+}
 .informacion li{
     margin: 0px;
     padding: 10px 25px;
@@ -1143,7 +1171,7 @@ textarea{
     padding: 15px;
     font-size: 60px;
 }
-@media screen and (max-width: 1441px){
+@media screen and (max-width: 1700px){
     
     .figuras{
         transform: scale(0.7);
@@ -1154,19 +1182,19 @@ textarea{
    }
 
     .amarillo.grande{
-        transform: scale(1.25) translateX(600px);
+        transform: scale(1) translateX(750px);
     }
     .rosa.grande{
-        transform: scale(1.4) translateX(300px);
+        transform: scale(1.1) translateX(300px);
     }
     .azul.grande{
-        transform: scale(1.25) translateX(-100px);
+        transform: scale(1) translateX(-100px);
     } 
     .yo .contenido h1{
         font-size: 75px;
     }
      .cv .contenido h1{
-        font-size: 70px;
+        font-size: 60px;
     }
     .info{
         margin: 0px;
@@ -1221,13 +1249,13 @@ textarea{
         height: 300px;
     }
     .yo .contenido h1{
-        font-size: 65px;
+        font-size: 54px;
     }
      .cv .contenido h1{
-        font-size: 65px;
+        font-size: 54px;
     }
     .proyectos .contenido h1{
-        font-size:65px;
+        font-size:54px;
     }
     .contenido-2 video{
         width: 50%;
@@ -1550,6 +1578,13 @@ textarea{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .actitudes-2{
+        width: 50%;
+    }
+    .informacion .actitudes-2 p{
+        width: 50%;
+        font-size: 35px;
     }
     .informacion p {
         margin: 0px;
