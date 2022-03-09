@@ -659,8 +659,9 @@ svg.i:hover{ opacity: 1;
         background-image: url("https://static.fnac-static.com/multimedia/Images/ES/NR/d3/37/16/1456083/1507-1/tsp20180302162546/Mi-vida-en-la-Maleza-de-los-Fantasmas.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        
-       
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
         box-shadow: -4px 6px 5px 0px #607d8b63;
         border-radius: 20px;
         position: relative;
@@ -708,6 +709,8 @@ svg.i:hover{ opacity: 1;
         transition-duration: 1s;
         transform-origin: center;
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
         transform: rotateY(-180deg);
         background-color: #f0eba8;
     }
@@ -1133,14 +1136,14 @@ textarea{
     padding: 15px;
     font-size: 60px;
 }
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1441px){
     
     .figuras{
         transform: scale(0.7);
     }
 
    .entresijos{
-       width: 50%;
+       width: 40%;
    }
 
     .amarillo.grande{
@@ -1354,22 +1357,34 @@ textarea{
     }
 }
 @media screen and (max-width:767px) {
-    /* .cuadrado{
-        width: 100px;
-        height:100px;
+    .negro{
+        width: 15px;
+        height: 40px;
+        border-right: 4px solid #de899d;
     }
-    .circulo{
-        width: 100px;
-        height: 100px;
+    .menu{
+        left: -100%;
+        width: 100%;
     }
-    
-    .triangulo_1, .triangulo{
-        width: 100px;
-        height: 100px;
-    } */
+    .contenedor{
+       flex-direction: column;
+   }
+   .espacio{
+       width: 200px;
+       height: 150px;
+   }
     .figuras{
         transform: scale(0.3);
     }
+    .amarillo.grande{
+        transform: scale(0.3) translateX(0px);
+    }
+    .rosa.grande{
+        transform: scale(0.3) translateX(0px);
+    }
+    .azul.grande{
+        transform: scale(0.3)translateX(0px) ;
+    } 
     .yo .contenido h1{
         font-size: 40px;
     }
@@ -1463,9 +1478,11 @@ textarea{
         padding: 0%;
     }
     li.boton{
+        font-size: 25px;
         padding: 10px;
     }
     li.book{
+        font-size: 25px;
         padding: 10px;
     }
     .club{
@@ -1474,19 +1491,40 @@ textarea{
     .entresijos{
         width: 100%;
     }
+     .sinopsis .resumen{
+        padding: 10px;
+    }
     .resumen p{
         font-size: 12px;
     }
+    .cabecera{
+        flex-direction: column;
+    }
     .contenido-3{
+        width: 100%;
     padding:10px ;
+    }
+    .cv-2{
+        margin-bottom: 75px;
+        justify-content: center;
+        width:85% ;
     }
     .contenido-3 .textito-2{
         font-size: 75px;
     }
-    .foto img{
-        width: 300px;
-        height: 520px;
+    .contenido-3 h5{
+        padding: 10px;
+        font-size: 30px;
+    } 
+    .foto{
+        margin: 0px;
+        width: 100%;
     }
+    .foto img{
+        width: 250px;
+        height: 400px;
+    }
+    
     .info{
         display: flex;
         flex-direction: column;
@@ -1496,22 +1534,46 @@ textarea{
         width: 100%;
         margin: 0px;
     }
-    .trabajo{ margin: 5px;
+    .trabajo{ margin: 5px 2px;
         width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .informacion p {
+        margin: 0px;
+        padding:19px 10px;
+        font-size: 15px;
+    }
+    .informacion li {
+        font-size: 15px;
+        padding: 8px;
     }
     .trabajo h2{
-        font-size: 25px;
+        padding: 10px;
+        font-size: 13px;
     }
     .vitae{
+        margin: 5px;
         width: 100%;
+    }.cv-2 a{
+        font-size: 22px;
+        padding:0px 20px 20px;
     }
-    .triangulo_1_2{
-        width: 100px;
-        height: 100px;
+    .triangulo_1_2 {
+        width: 50px;
+        height: 60px;
     }
     .trabajo-3{
-        width: 300px;
-        height: 300px;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+    }
+    .trabajo-3 img{
+        width: 50%;
+    }
+    .derecha{
+        padding: 20px 0px;
     }
 }
     
