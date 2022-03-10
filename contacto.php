@@ -42,8 +42,8 @@
        
     
         // true si envia correo Fslse si algo ha ido mal y no ha enviado correo
-        // $envioMail = mail($to, $subjet, $body, $headers);
-        $envioMail = true;
+        $envioMail = mail($to, $subjet, $body, $headers);
+       
         
 
         }     
