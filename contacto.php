@@ -59,6 +59,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2d60c846f7.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -145,9 +148,9 @@
                 <p>Telefono:690084912 </p>
                 <p>Mail: <a href=""> javiergasconruiz@live.com</p></a>
                 <div class="redes">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/javito.catral"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/javitocatralskater/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/javier-gasc%C3%B3n-ruiz-826b0812b/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </div> 
@@ -186,23 +189,23 @@
            
         </div>
         <div class="menu proyectos">
-            <div class="contenido">
-                <h1><a href="proyectos.html">Proyectos</a> </h1>
+                <div class="contenido">
+                    <h1><a href="proyectos.html">Proyectos</a> </h1>
+                </div>
+                <div class="contenido">
+                    <h1><a href="proyectos.html#practicas"> Practicas</a></h1>
+                </div>
+                <div class="contenido">
+                    <h1><a href="proyectos.html#propios"> Proyectos propios</a></h1>
+                </div>
+                <div class="contenido">
+                    <h1><a href="proyectos.html#propios"> Wordprees</a></h1>
+                </div>
+                
+                <div class="contenido">
+                    <h1><a href="contacto.php"> Contacta</a></h1>
+                </div>
             </div>
-            <div class="contenido">
-                <h1><a href=""> Practicas</a></h1>
-            </div>
-            <div class="contenido">
-                <h1><a href=""> Proyectos propios</a></h1>
-            </div>
-            <div class="contenido">
-                <h1><a href=""> Wordprees</a></h1>
-            </div>
-            
-            <div class="contenido">
-                <h1><a href="contacto.html"> Contacta</a></h1>
-            </div>
-        </div>
         
     </div>
     <script src="Js/funciones.js"></script>

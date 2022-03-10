@@ -406,7 +406,7 @@ svg.i:hover{ opacity: 1;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        background-image: url("../img/basic.png");
+        background-image: url("../img/basic-2.png");
       
     }
     .nav-2{
@@ -496,6 +496,7 @@ svg.i:hover{ opacity: 1;
        
     }
     .personal-2 p{
+        font-family: Big Shoulders Text;
         padding: 15px;
         font-size: 25px;
     }
@@ -545,7 +546,7 @@ svg.i:hover{ opacity: 1;
     
   
     .donde p{ 
-       
+        font-family: Big Shoulders Text;
         border-radius: 20px;
         margin: 0px;
         padding: 20px 100px 50px; font-size: 25px;
@@ -568,6 +569,7 @@ svg.i:hover{ opacity: 1;
         height: 165px;
     }
     .texto-2.club-2 p{
+        font-family: Big Shoulders Text;
         padding: 50px;
         font-size: 20px;
     }
@@ -686,7 +688,7 @@ svg.i:hover{ opacity: 1;
         
     }
     .libro.altura{
-        background-image: url("https://static.fnac-static.com/multimedia/Images/ES/NR/02/cc/50/5295106/1507-1.jpg");
+        background-image: url("https://static.fnac-static.com/multimedia/Images/ES/NR/3a/dd/61/6413626/1507-1.jpg");
         
     }
     .libro.fahrenheit{
@@ -725,6 +727,7 @@ svg.i:hover{ opacity: 1;
         background-color: #f0eba8;
     }
     .resumen p{
+        font-family: Big Shoulders Text;
         font-size: 20px;
     }
     .sinopsis:hover .libro{
@@ -734,6 +737,7 @@ svg.i:hover{ opacity: 1;
         transform: rotateY(0deg);
     }
     li.book{ 
+        cursor: pointer;
         transition-duration: 0.5s;
         padding: 35px;
         font-size: 35px;
@@ -745,7 +749,9 @@ svg.i:hover{ opacity: 1;
         color: white;
         background-color: #F2EC94;
     }
-    li.boton{ transition-duration: 0.5s;
+    li.boton{
+        cursor: pointer;
+        transition-duration: 0.5s;
         padding: 35px;
         font-size: 35px;
     }
@@ -777,6 +783,7 @@ svg.i:hover{ opacity: 1;
         padding: 0px 50px 10px;
     }
     .cv-2 a p{
+        font-family: Big Shoulders Text;
         margin: 0%;
     }
     .textito-3-cv{
@@ -860,6 +867,7 @@ svg.i:hover{ opacity: 1;
     align-items: center;
     }
     .contenido-3 .textito-2{
+        padding: 50px 0px 0px;
         font-size: 150px;
         text-align: center;
     }
@@ -918,6 +926,7 @@ svg.i:hover{ opacity: 1;
     font-size: 20px;
 }
 .informacion p{
+    font-family: Big Shoulders Text;
     margin: 0px;
     padding: 10px 25px;
     font-size: 20px;
@@ -926,18 +935,15 @@ svg.i:hover{ opacity: 1;
     opacity: 1;
     z-index: 10;
 }
-.fecha{
-    width: 40%;
-}
-.fecha ul{
-margin: 0px;
-}
-.tipo{
+.experi{
     width: 33%;
 }
-.ciudad{
-    width: 23%;
+.experi h5{
+    margin: 0px;
+    font-size: 30px;
+    padding: 10px 25px;
 }
+
 .descargar{
     padding: 0px 50px 25px;
 }
@@ -963,6 +969,7 @@ margin: 0px;
     color: black;
 }
 .trabajo-3 p{
+    font-family: Big Shoulders Text;
     padding: 20px;
     font-size: 23px;
 }
@@ -1255,6 +1262,14 @@ textarea{
     .trabajo-3 .textito-2{
         font-size: 60px;
        }
+       .contenido-3 .textito-2{
+           padding: 100px 0px 0px;
+        font-size: 125px;
+        text-align: center;
+    }
+    .resumen p {
+        font-size: 18px;
+    }
 }
 @media (min-width:768px) and (max-width:1274px) {
     .negro{
@@ -1707,6 +1722,11 @@ textarea{
     .dir p{
         padding: 0px;
         font-size: 25px;
+    }
+    .contenido-3 .textito-2{
+        padding: 20px 0px 0px;
+        font-size: 75px;
+        text-align: center;
     }
 }
     
