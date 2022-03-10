@@ -156,19 +156,19 @@
         </div> 
        
         <div class="menu yo">
-            <div class="contenido">
+            <div class="contenido mas">
                 <h1> <a href="personal.html#soy">Quien soy</a></h1>
             </div>
-            <div class="contenido">
+            <div class="contenido mas">
                 <h1> <a href="personal.html#donde"> De donde soy</a></h1>
             </div>
-            <div class="contenido">
+            <div class="contenido mas">
                 <h1><a href="personal.html#hobbies"> Mis hobbies</a></h1>
             </div>
             <div class="contenido mas">
                 <h1><a href="contacto.php"> Contacta</a></h1>
             </div>
-           
+   
         </div>
         <div class="menu cv">
             <div class="contenido">

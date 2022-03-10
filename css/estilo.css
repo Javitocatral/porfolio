@@ -302,7 +302,7 @@ svg.i:hover{ opacity: 1;
         background-color: #010326;
     }
     .mas{
-        height: 40%;
+        height: 25%;
     }
     .yo .contenido h1{ margin:0px ;
         font-size: 89px;
@@ -906,6 +906,8 @@ svg.i:hover{ opacity: 1;
    
 } 
 .informacion.actitudes{
+    flex-wrap: wrap;
+}.informacion.educacion {
     flex-wrap: wrap;
 }
 .actitudes-2{
@@ -1727,6 +1729,18 @@ textarea{
         padding: 20px 0px 0px;
         font-size: 75px;
         text-align: center;
+    }
+    .informacion.educacion{
+       display: flex;
+        flex-direction: column;
+    }
+    .experi p{
+        font-size: 15px;
+    }
+    .experi h5 {
+        margin: 0px;
+        font-size: 20px;
+        padding: 10px 25px;
     }
 }
     
