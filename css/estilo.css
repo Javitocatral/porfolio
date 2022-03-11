@@ -393,14 +393,7 @@ svg.i:hover{ opacity: 1;
 
         }
     }
-    .menphys{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        background-image: url("../img/descarga.jfif");
-       
-    }
+   
     .menphys-2{
         display: flex;
         justify-content: center;
