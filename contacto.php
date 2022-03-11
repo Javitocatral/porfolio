@@ -135,7 +135,7 @@
                 
                     <div class="exito">
                         <div class="mensajes-1">
-                           <p> Gracias por contactar conmigo en breve te respondere</p>
+                           <p> Gracias por contactar conmigo en breve te responderé. </p>
                         </div>
                     </div>
                     <?php
