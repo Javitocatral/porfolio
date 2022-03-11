@@ -170,8 +170,31 @@ $(".boton").click(function(){
   
  
 })
+$(window).scroll(function(){
+   scrollAnimation("#animacion", "aparece-izq");
+   scrollAnimation("#animacion-1", "aparece-dch");
+   scrollAnimation("#animacion-2", "aparece-izq");
+   scrollAnimation("#animacion-3", "aparece-dch");
+   scrollAnimation("#animacion-4", "aparece-izq");
+   scrollAnimation("#animacion-5", "aparece-dch");
+   scrollAnimation("#animacion-6", "aparece-izq");
+   scrollAnimation("#animacion-7", "aparece-dch");
 
 })
+})
+function scrollAnimation(id, clase){
+   var scroll = $(window).scrollTop()
+   console.log(scroll)
+   var distancia_elemento = $(id).offset().top;
+   var ventana = $(window).height();
+
+   if( scroll+ventana/2> distancia_elemento){
+       $(id+" .trabajo-3").addClass(clase)
+   }else{
+       $(id+" .trabajo-3").removeClass(clase)
+   }
+}
+
 $(window).on("load", function(){
 
 setTimeout(function(){
