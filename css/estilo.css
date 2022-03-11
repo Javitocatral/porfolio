@@ -960,6 +960,7 @@ svg.i:hover{ opacity: 1;
     border-radius: 50%;
     width: 600px;
     height: 600px;
+    transform: translateX(-100vw);
 }
 .trabajo-3 img{
     padding: 20px;
@@ -988,6 +989,31 @@ svg.i:hover{ opacity: 1;
     align-items: flex-end;
     display: flex;
     justify-content: flex-end;
+}
+.aparece-izq{
+    animation-name: aparece-izq;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+.aparece-dch{
+    animation-name: aparece-dch;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    
+}
+@keyframes aparece-izq{
+    0%{transform: translateX(-100vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+@keyframes aparece-dch{
+    0%{transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
 }
 .triangulo_1_2{ 
    
@@ -1520,17 +1546,25 @@ textarea{
         padding: 10px;
         font-size: 25px;
     }
+    .personal-2 p {
+        margin: 0px;
+        padding: 5px;
+        font-size: 18px;
+    }
     .todo-2{
-        padding: 10px;
+        padding: 0px;
         display:flex ;
         flex-direction: column;
     }
     .texto{
-        padding-left: 10px;
+        padding-right: 0px;
+        box-shadow: none;
+        padding-left: 0px;
         width: 100%;
 
     }
     .imagen{
+        box-shadow: none;
         margin-left: 0px;
     width: 100%;
     }
@@ -1538,22 +1572,28 @@ textarea{
         width: 300px;
         height: 200px;
     }
+    .texto-2{
+        box-shadow: none;
+    }
     .donde{
+        box-shadow: none;
         margin-bottom: 0px;
         margin-top: 50px;
-        width: 85%;
+        width: 90%;
         padding: 10px;
     }
     .donde p{
-        padding: 10px;
+        font-size: 18px;
+        padding: 5px;
     }
     .textito-2{
         font-size: 55px;
     }
     .hobbies{
+        box-shadow: none;
         margin-bottom: 50px;
         margin-top: 50px;
-        width: 85%;
+        width: 90%;
         padding: 10px;
     }
     .contenido-2{
@@ -1564,11 +1604,14 @@ textarea{
         width: 100%;
     }
     .contenido-2 .lista{
-        
+        padding: 5px;
+        box-shadow: none;
         width: 100%;
+        margin: 0px;
     }
     .roller{
-        padding: 10px;
+        box-shadow: none;
+        padding: 0px;
     
     }
     .textito-3{
@@ -1576,8 +1619,8 @@ textarea{
         font-size: 57px;
     }
     .texto-2.club-2 p {
-        padding: 10px;
-        font-size: 20px;
+        padding: 5px;
+        font-size: 18px;
     }
     .texto-2{ display: flex;
         flex-direction: column;
@@ -1587,13 +1630,15 @@ textarea{
     }
     li.boton{
         font-size: 25px;
-        padding: 10px;
+        padding: 5px;
     }
     li.book{
         font-size: 25px;
         padding: 10px;
     }
+    
     .club{
+        box-shadow: none;
         padding: 10px;
     }
     .entresijos{
@@ -1615,7 +1660,7 @@ textarea{
     .cv-2{
         margin-bottom: 75px;
         justify-content: center;
-        width:85% ;
+        width:90% ;
     }
     .contenido-3 .textito-2{
         font-size: 75px;
@@ -1625,6 +1670,8 @@ textarea{
         font-size: 30px;
     } 
     .foto{
+        box-shadow: none;
+        background-color: white;
         margin: 0px;
         width: 100%;
     }
@@ -1651,6 +1698,7 @@ textarea{
     .actitudes-2{
         width: 50%;
     }
+  
     .informacion .actitudes-2 p{
         width: 100%;
         font-size: 20px;
@@ -1669,6 +1717,9 @@ textarea{
         font-size: 13px;
     }
     .vitae{
+        
+        box-shadow: none;
+        padding: 0px;
         margin: 5px;
         width: 100%;
     }.cv-2 a{
@@ -1681,14 +1732,14 @@ textarea{
     }
     .trabajo-3{
         padding: 10px;
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
     
     .trabajo-3 img{
-        padding: 8px;
+        padding: 5px 0px;
         border-radius: 20px;
-        width: 100px;
+        width: 150px;
     }
     .trabajo-3 a{
         font-size: 25px;
@@ -1697,15 +1748,25 @@ textarea{
     .trabajo-3 p{
         margin: 0px;
         padding: 0px;
-        font-size: 13px;
+        font-size: 12px;
+    }
+    .trabajo-3 svg{
+        width: 150px;
+        height: 75px;
+        padding: 10px 5px;
     }
     .trabajo-3 .textito-2{
-        font-size: 25px;
+        font-size: 35px;
+        text-align: center;
        }
-    .derecha{
+    .derecha{ width: 95%;
         padding: 20px 0px;
     }
+    .izquierda{
+        width: 95%;
+    }
     .formulario{
+        width: 90%;
         padding: 10px;
         margin: 75px 0px;
         flex-direction: column;
@@ -1735,12 +1796,16 @@ textarea{
         flex-direction: column;
     }
     .experi p{
+        padding: 10px 5px;
         font-size: 15px;
     }
     .experi h5 {
         margin: 0px;
-        font-size: 20px;
-        padding: 10px 25px;
+        font-size: 18px;
+        padding: 5px;
+    }
+    .escribeme{
+        box-shadow: none;
     }
 }
     

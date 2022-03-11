@@ -16,23 +16,26 @@
     
     ){  
 
+       
+
         // lo que hacemos si hay información enviada del form
         
         $nombre = $_POST["nombre"];
         $email = $_POST["email"];
         $mensaje = $_POST["mensaje"];
+
         // receptor
-         $to = "javitocatral@gmail.com";
+        $to = "manu.jr9@gmail.com";
         //  asunto
         $subjet = "consulta de la web";
         //  mensaje
         $body = "<html>  
-                <heade>
+                <head>
+                </head>
                 <body> 
                     <h1> Consulta en la web</h1>
                     <p> $mensaje </p>
                 </body>
-                </heade>
             </html>";
     
         // cabeceras de el correo 
@@ -43,9 +46,7 @@
     
         // true si envia correo Fslse si algo ha ido mal y no ha enviado correo
         $envioMail = mail($to, $subjet, $body, $headers);
-       
         
-
         }     
 
 ?>
@@ -103,7 +104,7 @@
                 <div class="formulario-2">
                 <form class="escribeme" action="" method="POST">
                     <div class="uno">
-                        <h1>Cotratame!</h1>
+                        <h1>Contratame!</h1>
                     </div>
                     <div class="dos-1">
                         <label for="nombre">Tu nombre</label>
