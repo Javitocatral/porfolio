@@ -25,7 +25,7 @@
         $mensaje = $_POST["mensaje"];
 
         // receptor
-        $to = "manu.jr9@gmail.com";
+        $to = "javitocatral@gmail.com";
         //  asunto
         $subjet = "consulta de la web";
         //  mensaje

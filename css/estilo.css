@@ -12,8 +12,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-  
 }
 .fondo{width: 100%;
     position: absolute;
@@ -34,12 +32,36 @@ body{
     animation-iteration-count:infinite;
     animation-timing-function: linear;
 }
-.negro{ border-radius: 20px;
+.rectangulo:hover .negro-2{
+    animation-name: gira;
+    animation-duration: 0.5s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+.negro{ 
     transform: rotateZ(-45deg);
     background-color: #010326;
-    width: 25px;
-    height: 70px;
-    border-right: 10px solid #de899d;
+    width: 50px;
+    height: 50px;
+    border-right: 8px solid #de899d;
+    
+}
+.negro-1{ 
+    border-radius: 50%;
+    transform: rotateZ(-45deg);
+    background-color: #010326;
+    width: 50px;
+    height: 50px;
+    border-right: 8px solid #de899d;
+    
+   
+}
+
+.negro-2{ 
+    width: 50px;
+    height: 50px;
+    transform: rotateZ(-135deg);
+    border-right: 3px solid #de899d;
 }
 .espacio{position: relative;
     width: 500px;
@@ -48,7 +70,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.cuadrado{
+.cuadrado{ 
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -64,7 +86,6 @@ body{
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-delay: 1s;
-    
 }
 .circulo{
     cursor: pointer; 
@@ -82,7 +103,6 @@ body{
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-delay:1.3s;
-   
 }
 .triangulo_1, .triangulo{
     cursor: pointer;
@@ -95,7 +115,6 @@ body{
     position: relative;
     width: 300px;
     height: 300px;
-   
     animation-name: latetriangulo;
     animation-duration:0.8s;
     animation-iteration-count: 1;
@@ -106,7 +125,6 @@ body{
     transition-property: all;
     z-index: 2;
     position: relative;
-    
 }
 .sombra{z-index: 9;
     position: absolute;
@@ -145,22 +163,21 @@ body{
     animation-delay: 1.8s;
     animation-fill-mode:both ;
     border-radius: 20px;
-   
-   
 }
 .cuadrado h2{
     transform: rotate(-45deg);
 }
-.espacio h2{padding: 5px;
+.espacio h2{
+    padding: 5px;
     border-radius: 20px;
-        opacity: 0;
-        font-size: 50px;
-        color:#010326 ;
-        font-family: Big Shoulders Stencil Text;
-        background-color: white;
-        transition: linear;
-        transition-property: all;
-        transition-duration: 0.5s;
+    opacity: 0;
+    font-size: 50px;
+    color:#010326 ;
+    font-family: Big Shoulders Stencil Text;
+    background-color: white;
+    transition: linear;
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 .espacio .azul h2{
     padding: 5px;
@@ -185,8 +202,6 @@ body{
 .espacio:hover h2{
     opacity: 1;
 }
-
-
 .parte_1{
     display: flex;
     align-items: center;
@@ -196,13 +211,10 @@ body{
     display: flex;
     align-items: center;
 }
-
 .burguer i{
     font-size: 30px;
     color: #cba6cb;
 }
-
-
 .iconos{
     cursor: pointer;
     padding: 10px;
@@ -218,13 +230,11 @@ body{
 .dos i{
 font-size: 40px;
 color:  #F291C7;
-
 }
 .dos i:hover{ 
     transition-duration: 0.5s;
     transform: scale(1.3);
     }
-
 svg.i{ 
     transform: rotateZ(-135deg);
     width: 40px;
@@ -235,28 +245,21 @@ svg.i:hover{ opacity: 1;
     transition-duration: 0.5s;
     transform: rotateZ(-135deg);
     transform: scale(1.3);
-    }
-  
-   
+    }  
     .menu.abierto{
         top: 100px;
         left: 0px;
-        
     }
-    .grande{
-        
+    .grande{  
         transition-duration: 1s;
-       transition-property: all;
-        
+       transition-property: all;  
     }
     .grande h2{
         opacity: 1;
     }
     .grande.azul h2{
-        opacity: 1;
-        
+        opacity: 1;   
     }
- 
     .amarillo.grande{
         transform: scale(1.5) translateX(700px);
     }
@@ -287,7 +290,6 @@ svg.i:hover{ opacity: 1;
         transition-duration: 0.5s;
         transition-timing-function: linear;
     }
-    
     .contenido{ top: 0px;
         left: 0px;
         display: flex;
@@ -326,7 +328,6 @@ svg.i:hover{ opacity: 1;
         background-color: #F291C7;
         transition-duration: 0.5s;
     }
-    
     .proyectos .contenido h1{ 
         margin:0px ;
         font-size: 89px;
@@ -375,7 +376,6 @@ svg.i:hover{ opacity: 1;
             transform: scale(1) rotateZ(-135deg);
         }  
     }    
- 
     @keyframes gira{
         0%{
             transform: rotateZ(0deg);
@@ -390,20 +390,16 @@ svg.i:hover{ opacity: 1;
         }
         100%{
             top: 0px;
-
         }
     }
-   
     .menphys-2{
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        background-image: url("../img/basic-2.png");
-      
+        background-image: url("../img/basic-3.png");
     }
     .nav-2{
-    
         z-index: 99;
         display: flex;
         top: -100px;
@@ -421,8 +417,6 @@ svg.i:hover{ opacity: 1;
         animation-delay: 1s;
         animation-fill-mode:both ;
         border-radius: 20px;
-
-       
     }
     .casa a{
        font-size: 50px;
@@ -433,18 +427,13 @@ svg.i:hover{ opacity: 1;
         overflow: hidden;    
         display: flex;
         flex-direction: row;
-        
     }
     .personal-2{
-        
         padding: 65px;
         border-radius: 20px;
         margin-top: 150px;
         width: 80%;
         background-color: white;
-      
-        
-
     }
     .personal-2 h5{
         margin: 0%;
@@ -454,7 +443,6 @@ svg.i:hover{ opacity: 1;
     }
     .titulo{ display: flex;
         justify-content: space-between;
-       
     }
     .titulo-2{
         display: flex;
@@ -463,7 +451,6 @@ svg.i:hover{ opacity: 1;
         width: 50%;
     }
     .peque{
-        
         height: 200px;
         width: 200px;
        display: flex;
@@ -473,20 +460,16 @@ svg.i:hover{ opacity: 1;
         width: 50%;
        margin: 0px;
         font-size: 150px;
-       
     }
     .textito-2 {
         width:100%;
-       
         font-size:100px ;
         margin: 0%;
-       
     } .textito-3 {
         width:100%;
         padding:50px;
         font-size:70px ;
         margin: 0%;
-       
     }
     .personal-2 p{
         font-family: Big Shoulders Text;
@@ -494,7 +477,6 @@ svg.i:hover{ opacity: 1;
         font-size: 25px;
     }
     .texto{
-        
         box-shadow: -4px 6px 5px 0px #607d8b63;
         padding-right: 20px;
         border-radius: 20px;
@@ -502,13 +484,9 @@ svg.i:hover{ opacity: 1;
         width: 50%;
     }
     .imagen{
-       margin-left: 30px;
-        
+        margin-left: 30px;
         border-radius: 20px;        
-        box-shadow:  -4px 6px 5px 0px #607d8b63;
-        
         width: 50%;
-        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -520,24 +498,18 @@ svg.i:hover{ opacity: 1;
     .carousel-item img{
         border-radius: 20px;
         object-fit: cover;
-        
-    }
-    
+    }  
     .donde{
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 150px;
-       padding: 50px;
+        padding: 50px;
         padding-bottom: 100px;
         border-radius: 20px;
-       
         width: 80%;
         background-color: white;flex-direction: column;
-        
     } 
-    
-  
     .donde p{ 
         font-family: Big Shoulders Text;
         border-radius: 20px;
@@ -545,12 +517,12 @@ svg.i:hover{ opacity: 1;
         padding: 20px 100px 50px; font-size: 25px;
     }
     .donde iframe{
-       margin: 50px;
+        margin: 50px;
         border-radius: 20px;
     }
-    .texto-2{display: flex;
-        box-shadow: -4px 6px 5px 0px #607d8b63;
-        padding:40px;
+    .texto-2{
+        display: flex;
+        padding:30px;
         border-radius: 20px;
         margin-bottom: 20px;
         width: 100%;
@@ -563,19 +535,17 @@ svg.i:hover{ opacity: 1;
     }
     .texto-2.club-2 p{
         font-family: Big Shoulders Text;
-        padding: 50px;
-        font-size: 20px;
+        padding: 30px;
+        font-size: 25px;
     }
     .hobbies{ 
-
         flex-direction: column;
         display: flex;
         justify-content: center; align-items: center;
         margin-top: 150px;
-         margin-bottom: 150px;
+        margin-bottom: 150px;
         padding: 50px;
         border-radius: 20px;
-        
         width: 80%;
         background-color: white;
     }
@@ -584,9 +554,6 @@ svg.i:hover{ opacity: 1;
         box-shadow: -4px 6px 5px 0px #607d8b63;
         padding: 50px;
         border-radius: 20px;
-       
-        
-        
     }
     .contenido-2{justify-content: center;
         display: flex;
@@ -597,8 +564,6 @@ svg.i:hover{ opacity: 1;
         box-shadow: -4px 6px 5px 0px #607d8b63;
         border-radius: 20px;
         margin-bottom: 25px; 
-   
-       
     }
     .aparece{
         animation-name: aparece;
@@ -616,7 +581,6 @@ svg.i:hover{ opacity: 1;
         }
     }
     .contenido-2 .texto-2{
-       
         box-shadow: -4px 6px 5px 0px #607d8b63;
         border-radius: 20px;
         margin-bottom: 25px;
@@ -634,8 +598,6 @@ svg.i:hover{ opacity: 1;
         box-shadow: -4px 6px 5px 0px #607d8b63;
         padding: 20px;
         border-radius: 20px;
-       
-       
     }
     .entresijos{
         display: flex;
@@ -648,17 +610,16 @@ svg.i:hover{ opacity: 1;
        position:absolute;
        top: 0px;
        opacity: 0;
-       
      }
     .lectura.amos{
          position: relative;
      }
     .sinopsis{
         margin-bottom: 25px;
-    height: 100%;
-    width: 100%;
-     position: relative;
-    perspective: 1000px;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        perspective: 1000px;
    }
     .sinopsis .libro{
         background-image: url("https://static.fnac-static.com/multimedia/Images/ES/NR/d3/37/16/1456083/1507-1/tsp20180302162546/Mi-vida-en-la-Maleza-de-los-Fantasmas.jpg");
@@ -674,38 +635,30 @@ svg.i:hover{ opacity: 1;
         transition-timing-function: linear;
         transition-duration: 1s; 
         aspect-ratio: 6/9;
-       
     }
      .libro.moscas{
         background-image: url("https://static.fnac-static.com/multimedia/Images/ES/NR/46/10/06/397382/1507-1/tsp20210119132229/El-senor-de-las-moscas.jpg");
-        
     }
     .libro.altura{
-        background-image: url("https://static.fnac-static.com/multimedia/Images/ES/NR/3a/dd/61/6413626/1507-1.jpg");
-        
+        background-image: url("https://static.fnac-static.com/multimedia/Images/ES/NR/3a/dd/61/6413626/1507-1.jpg");   
     }
     .libro.fahrenheit{
-        background-image: url("https://static.fnac-static.com/multimedia/Images/ES/NR/2e/8b/61/6392622/1507-1.jpg");
-        
+        background-image: url("https://static.fnac-static.com/multimedia/Images/ES/NR/2e/8b/61/6392622/1507-1.jpg");   
     }
     .libro.george{
-        background-image: url("https://static.fnac-static.com/multimedia/ES/images_produits/ES/ZoomPE/4/4/9/9788499890944/tsp20130110133933/1984.jpg");
-        
+        background-image: url("https://static.fnac-static.com/multimedia/ES/images_produits/ES/ZoomPE/4/4/9/9788499890944/tsp20130110133933/1984.jpg");   
     }
-    
    .entresijos .lectura.active{
        opacity: 1;
        z-index: 10;
-       transition-duration: 0.5s;
+      transition-duration: 0.5s;
    }
-    
      .sinopsis .resumen{
-         padding: 20px;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         position: absolute;
-       height: 100%;
-       
+        height: 100%;
         left: 0px;
         top: 0px;
         border-radius: 20px;
@@ -764,7 +717,6 @@ svg.i:hover{ opacity: 1;
         margin-top: 150px;
         background-color: white;
         width: 80%;
-        
         margin-bottom: 150px;
     }
     .cv-2 a{ 
@@ -772,7 +724,6 @@ svg.i:hover{ opacity: 1;
         background-color: #F291C7 ;
         color: #010326;
         font-size: 30px;
-        
         padding: 0px 50px 10px;
     }
     .cv-2 a p{
@@ -803,17 +754,12 @@ svg.i:hover{ opacity: 1;
         color: white;
         background-color:#F291C7 ;
     }
-
     .cabecera{ 
-    
         justify-content: center;
         display: flex;
         width: 100%;
-
     }
     .cabecera-2{
-     
-        
         width: 30%;
         margin-bottom: 50px;
         margin-left: 25px;
@@ -842,7 +788,6 @@ svg.i:hover{ opacity: 1;
         font-weight: 800;
     }
     .vitae{ 
-        
         padding: 50px;
         width: 50%;
         margin-left: 10px;
@@ -850,14 +795,13 @@ svg.i:hover{ opacity: 1;
         box-shadow:  -4px 6px 5px 0px #607d8b63;
         position: relative;
     }
-    .vit
     .contenido-3{
         justify-content: center;
-    display: flex;
-    padding: 100px 50px;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
+        display: flex;
+        padding: 100px 50px;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
     }
     .contenido-3 .textito-2{
         padding: 50px 0px 0px;
@@ -880,21 +824,21 @@ svg.i:hover{ opacity: 1;
     .curriculum{
         position: relative;
     }
-    .informacion{ display: flex;
+    .informacion{ 
+        display: flex;
         justify-content: center;
         align-items: center;
         position:absolute;
         height:450px;
         width: 100%;
         border-radius: 20px;
-       
         background-color: white;
         top: 0px;
         opacity: 0;
         transition-duration: 1s;
     }
  .informacion.experiencia{ 
-     
+    flex-direction: column;
     position:relative;
    
 } 
@@ -903,16 +847,16 @@ svg.i:hover{ opacity: 1;
 }.informacion.educacion {
     flex-wrap: wrap;
 }
-.actitudes-2{
-   width: 50%;
+.actitudes-2{ 
+    border-radius: 10px;
+    border-bottom:3px solid #010326 ;
+    border-left:3px solid #010326 ;  
+    width: 50%;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    
-   
 }
 .informacion .actitudes-2 p{
-   
     font-size: 35px;
 }
 .informacion li{
@@ -931,14 +875,14 @@ svg.i:hover{ opacity: 1;
     z-index: 10;
 }
 .experi{
-    width: 33%;
+    padding: 20px;
+    width: 100%;
 }
 .experi h5{
     margin: 0px;
     font-size: 30px;
     padding: 10px 25px;
 }
-
 .descargar{
     padding: 0px 50px 25px;
 }
@@ -985,14 +929,13 @@ svg.i:hover{ opacity: 1;
 }
 .aparece-izq{
     animation-name: aparece-izq;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: both;
 }
 .aparece-dch{
     animation-name: aparece-dch;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: both;
-    
 }
 @keyframes aparece-izq{
     0%{transform: translateX(-100vw);
@@ -1009,7 +952,6 @@ svg.i:hover{ opacity: 1;
     }
 }
 .triangulo_1_2{ 
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1020,7 +962,6 @@ svg.i:hover{ opacity: 1;
     width: 200px;
     height: 200px;
 }
-
 .carga{ 
     align-items: center;
     justify-content: center;
@@ -1030,9 +971,7 @@ svg.i:hover{ opacity: 1;
     width: 100vw;
     z-index: 100;
     position: fixed;
-    
 }
-
 .cuadrado.cambio{
     width: 100px;
     height: 100px;
@@ -1042,7 +981,6 @@ svg.i:hover{ opacity: 1;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-delay: 0s;
-  
 }
 .circulo.cambio{
     width: 100px;
@@ -1060,7 +998,7 @@ svg.i:hover{ opacity: 1;
     align-items: center;
     z-index: 10;
     transform: rotateZ( 
--135deg);
+    -135deg);
     position: relative;
     width: 100px;
     height: 100px;
@@ -1101,14 +1039,13 @@ svg.i:hover{ opacity: 1;
     justify-content: center; 
     align-items: center;
     margin-top: 150px;
-   padding: 50px;
+    padding: 50px;
     padding-bottom: 100px;
     border-radius: 20px;
     margin-bottom: 150px;
     width: 80%;
     background-color: white;
 }
-
 .escribeme{
     display: flex;
     flex-direction: column;
@@ -1119,7 +1056,6 @@ svg.i:hover{ opacity: 1;
     box-shadow:  -4px 6px 5px 0px #607d8b63;
     background-color: white;
     border-radius: 20px;
-    
 } 
 .formulario-2{
     width: 100%;
@@ -1148,7 +1084,6 @@ label{
 }
 select{
     outline: none;
-    
     width: 100%;
     border: none;
 }
@@ -1200,10 +1135,8 @@ textarea{
     font-family: Open Sans;
     justify-content: center;
     align-items: center;
-   
 }
 .dir p{ 
-    
     padding-left: 50px;
     font-size: 30px;
 }
@@ -1218,15 +1151,12 @@ textarea{
     font-size: 60px;
 }
 @media screen and (max-width: 1700px){
-    
     .figuras{
         transform: scale(0.7);
     }
-
    .entresijos{
        width: 40%;
    }
-
     .amarillo.grande{
         transform: scale(1) translateX(750px);
     }
@@ -1334,8 +1264,7 @@ textarea{
         padding: 20px;
     }
     .textito{
-        font-size: 100px;
-        
+        font-size: 100px;   
     }
     .entresijos{
         width: 100%;
@@ -1354,11 +1283,10 @@ textarea{
     .texto{
         padding-left: 20px;
         width: 100%;
-
     }
     .imagen{
         margin-left: 0px;
-    width: 100%;
+         width: 100%;
     }
     iframe{
         width: 550px;
@@ -1378,7 +1306,6 @@ textarea{
     }
     .roller{
         padding: 20px;
-    
     }
     .textito-3{
         padding: 20px;
@@ -1403,7 +1330,7 @@ textarea{
         font-size: 15px;
     }
     .contenido-3{
-    padding:20px ;
+        padding:20px ;
     }
     .contenido-3 .textito-2{
         font-size: 75px;
@@ -1480,7 +1407,6 @@ textarea{
         padding: 10px;
         font-size: 20px;
     }
-   
 }
 @media screen and (max-width:767px) {
     .negro{
@@ -1528,8 +1454,7 @@ textarea{
         padding: 10px;
     }
     .textito{
-        font-size: 60px;
-        
+        font-size: 60px;   
     }
     .cuadrado.peque{
         width: 50px;
@@ -1554,12 +1479,11 @@ textarea{
         box-shadow: none;
         padding-left: 0px;
         width: 100%;
-
     }
     .imagen{
         box-shadow: none;
         margin-left: 0px;
-    width: 100%;
+        width: 100%;
     }
     iframe{
         width: 300px;
@@ -1605,7 +1529,6 @@ textarea{
     .roller{
         box-shadow: none;
         padding: 0px;
-    
     }
     .textito-3{
         padding: 10px;
@@ -1629,7 +1552,6 @@ textarea{
         font-size: 25px;
         padding: 10px;
     }
-    
     .club{
         box-shadow: none;
         padding: 10px;
@@ -1648,7 +1570,7 @@ textarea{
     }
     .contenido-3{
         width: 100%;
-    padding:10px ;
+        padding:10px ;
     }
     .cv-2{
         margin-bottom: 75px;
@@ -1672,7 +1594,6 @@ textarea{
         width: 250px;
         height: 400px;
     }
-    
     .info{
         display: flex;
         flex-direction: column;
@@ -1691,7 +1612,6 @@ textarea{
     .actitudes-2{
         width: 50%;
     }
-  
     .informacion .actitudes-2 p{
         width: 100%;
         font-size: 20px;
@@ -1710,7 +1630,6 @@ textarea{
         font-size: 13px;
     }
     .vitae{
-        
         box-shadow: none;
         padding: 0px;
         margin: 5px;
@@ -1728,7 +1647,6 @@ textarea{
         width: 300px;
         height: 300px;
     }
-    
     .trabajo-3 img{
         padding: 5px 0px;
         border-radius: 20px;
@@ -1752,7 +1670,8 @@ textarea{
         font-size: 35px;
         text-align: center;
        }
-    .derecha{ width: 95%;
+    .derecha{ 
+        width: 95%;
         padding: 20px 0px;
     }
     .izquierda{
@@ -1767,7 +1686,6 @@ textarea{
     }
     .rellena{
         width: 100%;
-
     }
     .dos-1{
         padding: 10px;
