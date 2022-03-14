@@ -1256,14 +1256,20 @@ textarea{
         width: 200px;
         height: 300px;
     }
+    .espacio h2{
+        opacity: 1;
+    }
+    .espacio .azul h2{
+        opacity: 1;
+    }
     .yo .contenido h1{
         font-size: 54px;
     }
      .cv .contenido h1{
-        font-size: 54px;
+        font-size: 49px;
     }
     .proyectos .contenido h1{
-        font-size:54px;
+        font-size:49px;
     }
     .contenido-2 video{
         width: 50%;
@@ -1313,7 +1319,13 @@ textarea{
         padding: 20px;
     }
     .roller{
-        padding: 20px;
+        padding: 5px;
+    }
+    .club{
+        padding: 5px;
+    }
+    .lista{
+        padding: 0px;
     }
     .textito-3{
         padding: 20px;
@@ -1335,7 +1347,7 @@ textarea{
         padding: 10px;
     }
     .resumen p{
-        font-size: 15px;
+        font-size: 14px;
     }
     .contenido-3{
         padding:20px ;
@@ -1373,6 +1385,9 @@ textarea{
     .vitae{
         padding: 20px;
         width: 100%;
+    }
+    .informacion .actitudes-2 p{
+        font-size: 25px;
     }
     .fecha{
         width: 50%;
@@ -1414,6 +1429,9 @@ textarea{
         margin: 0px;
         padding: 10px;
         font-size: 20px;
+    }
+    .escribeme{
+        box-shadow: none;
     }
 }
 @media screen and (max-width:767px) {
