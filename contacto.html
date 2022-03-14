@@ -1,58 +1,3 @@
-
-
-<?php
-// vivne el form de contacto?
-    //  $_POST
-   
-//  imprimi algo sencillo por pantalla
-    
-    // imprimir cosas por pantala yarray y objetos
-   
-    $envioMail = false;
-    if( 
-    isset($_POST["nombre"]) && 
-    isset($_POST["email"]) &&
-    isset($_POST["mensaje"])
-    
-    ){  
-
-       
-
-        // lo que hacemos si hay información enviada del form
-        
-        $nombre = $_POST["nombre"];
-        $email = $_POST["email"];
-        $mensaje = $_POST["mensaje"];
-
-        // receptor
-        $to = "javitocatral@gmail.com";
-        //  asunto
-        $subjet = "consulta de la web";
-        //  mensaje
-        $body = "<html>  
-                <head>
-                </head>
-                <body> 
-                    <h1> Consulta en la web</h1>
-                    <p> $mensaje </p>
-                </body>
-            </html>";
-    
-        // cabeceras de el correo 
-        $headers = "MIME-Version:1.0 \r\n";
-        $headers .= "From: $email \r\n ";
-        $headers .= "Content-type/html;charset=UTF-8 \r\n";
-       
-    
-        // true si envia correo Fslse si algo ha ido mal y no ha enviado correo
-        $envioMail = mail($to, $subjet, $body, $headers);
-        
-        }     
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2d60c846f7.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Librería de emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Conexión a archivo local de configuración de envío -->
+    <script src="Js/sendemailjs.js"></script>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
@@ -95,14 +45,11 @@
             </div>
         </div>
         
-        <div class="formulario">
-            <div class="rellena">
-                <?php
-                if( $envioMail==false ){
-                ?>
-                <!-- action: donde enviamos los datos: si esta vacio se envia  al misma pagina donde esta el formulario -->
-                <div class="formulario-2">
-                <form class="escribeme" action="" method="POST">
+    <div class="formulario">
+        <div class="rellena">
+                
+            <div class="formulario-2">
+                <form id="contact-form" class="escribeme" action="" method="POST">
                     <div class="uno">
                         <h1>Contratame!</h1>
                     </div>
@@ -125,23 +72,14 @@
                         <input id="boton-2" type="submit" name="boton">
                    
                     </div>
-                </form></div>
-                   <?php
-                   }else{
-
-                   ?>
-                    
-                   
-                
-                    <div class="exito">
+                </form>
+            </div>
+                <div class="exito">
                         <div class="mensajes-1">
                            <p> Gracias por contactar conmigo en breve te responderé. </p>
                         </div>
                     </div>
-                    <?php
-                         }
-                   ?>
-            </div>
+        </div>
            
             <div class="dir">
                 <h3 class="textito-3"> Javier Gascón Ruiz</h3>
@@ -154,7 +92,7 @@
                     <a href="https://www.linkedin.com/in/javier-gasc%C3%B3n-ruiz-826b0812b/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
-        </div> 
+    </div> 
        
         <div class="menu yo">
             <div class="contenido mas">
@@ -167,7 +105,7 @@
                 <h1><a href="personal.html#hobbies"> Mis hobbies</a></h1>
             </div>
             <div class="contenido mas">
-                <h1><a href="contacto.php"> Contacta</a></h1>
+                <h1><a href="contacto.html"> Contacta</a></h1>
             </div>
    
         </div>
@@ -176,16 +114,16 @@
                 <h1><a href="cv.html">C.vitae</a></h1>
             </div>
             <div class="contenido">
-                <h1><a href="http://localhost:8888/cv.html#experiencia"> Experiencia laboral</a></h1>
+                <h1><a href="cv.html#experiencia"> Experiencia laboral</a></h1>
             </div>
             <div class="contenido">
-                <h1><a href="http://localhost:8888/cv.html#educacion">Estudios</a</h1>
+                <h1><a href="cv.html#educacion">Estudios</a</h1>
             </div>
             <div class="contenido">
-                <h1><a href="http://localhost:8888/cv.html#actitudes"> Aptitudes</a></h1>
+                <h1><a href="cv.html#actitudes"> Aptitudes</a></h1>
             </div>
             <div class="contenido">
-                <h1><a href="contacto.php"> Contacta</a></h1>
+                <h1><a href="contacto.html"> Contacta</a></h1>
             </div>
            
         </div>
@@ -204,7 +142,7 @@
                 </div>
                 
                 <div class="contenido">
-                    <h1><a href="contacto.php"> Contacta</a></h1>
+                    <h1><a href="contacto.html"> Contacta</a></h1>
                 </div>
             </div>
         

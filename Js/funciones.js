@@ -150,6 +150,15 @@ $(".trabajo").click(function(){
   $("."+id).addClass("active")
 
 })
+var hash = window.location.hash;
+console.log("hash")
+console.log(hash)
+if(hash != ""){
+   $(".informacion").removeClass("activo")
+   var clase= hash.replace("#", ".")
+   console.log(clase);
+   $(clase).addClass("active")
+}
 
 $(".boton").click(function(){
    console.log("clic en boton") 
@@ -183,6 +192,10 @@ $(window).scroll(function(){
 })
 })
 function scrollAnimation(id, clase){
+
+   if($(id).length==0 ){
+      return
+   }
    var scroll = $(window).scrollTop()
    console.log(scroll)
    var distancia_elemento = $(id).offset().top;

@@ -459,8 +459,8 @@ svg.i:hover{ opacity: 1;
     .personal-2 p{
         margin: 0px;
         font-family: Big Shoulders Text;
-        padding: 10px;
-        font-size: 25px;
+        padding: 20px;
+        font-size: 28px;
     }
     .texto{
         box-shadow: -4px 6px 5px 0px #607d8b63;
@@ -833,8 +833,11 @@ svg.i:hover{ opacity: 1;
 }.informacion.educacion {
     flex-wrap: wrap;
 }
+.informacion p i{
+    padding: 5px;
+}
 .actitudes-2{ 
-    border-radius: 10px;
+    
     border-bottom:3px solid #010326 ;
     border-left:3px solid #010326 ;  
     width: 50%;
@@ -1043,10 +1046,23 @@ svg.i:hover{ opacity: 1;
     background-color: white;
     border-radius: 20px;
 } 
+input::placeholder{
+    font-family:Big Shoulders Text ;
+}
+textarea::placeholder{
+    font-size: 20px;
+    font-family:Big Shoulders Text ;
+}
+input#boton-2{
+    background-color:#7493e8 ;
+    font-size: 25px;
+    font-family:Big Shoulders Text ;
+}
 .formulario-2{
     width: 100%;
 }
 .exito{
+    display: none;
     box-shadow:  -4px 6px 5px 0px #607d8b63;
     border-radius: 20px;
     width: 100%;
@@ -1139,6 +1155,12 @@ textarea{
 @media screen and (max-width: 1700px){
     .figuras{
         transform: scale(0.7);
+    }
+    .personal-2 p{
+        margin: 0px;
+        font-family: Big Shoulders Text;
+        padding: 10px;
+        font-size: 25px;
     }
    .entresijos{
        width: 40%;
@@ -1411,6 +1433,12 @@ textarea{
        width: 200px;
        height: 150px;
    }
+   .espacio h2{
+       opacity: 1;
+   }
+   .espacio .azul h2{
+       opacity: 1;
+   }
     .figuras{
         transform: scale(0.3);
     }
@@ -1668,7 +1696,12 @@ textarea{
         padding: 10px;
         margin: 75px 0px;
         flex-direction: column;
-
+    }
+    li.book:hover{
+        color: black;
+    }
+    li.boton:hover{
+        color:black
     }
     .rellena{
         width: 100%;
@@ -1688,10 +1721,7 @@ textarea{
         font-size: 75px;
         text-align: center;
     }
-    .informacion.educacion{
-       display: flex;
-        flex-direction: column;
-    }
+    
     .experi p{
         padding: 10px 5px;
         font-size: 15px;
