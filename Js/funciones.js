@@ -131,7 +131,12 @@ $(".rosa").click(function(){
 
       
 
+         $(".cerrar").click(function(){
+           $(".yo").removeClass("abierto");
+            $(".cv").removeClass("abierto");
+            $(".proyectos").removeClass("abierto")
 
+         });
 
  
    $(".book").click(function(){

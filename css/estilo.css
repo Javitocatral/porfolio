@@ -275,6 +275,27 @@ svg.i:hover{ opacity: 1;
         transition-duration: 0.5s;
         transition-timing-function: linear;
     }
+    .yo .contenido i{
+        font-size: 30px;
+        top: 4px;
+        right: 15px;
+        position: absolute;
+        color: #F2EC94;
+    }
+    .cv .contenido i{
+        font-size: 30px;
+        top: 4px;
+        right: 15px;
+        position: absolute;
+        color: #F291C7;
+    }
+    .proyectos .contenido i{
+        font-size: 30px;
+        top: 4px;
+        right: 15px;
+        position: absolute;
+        color: #5EF2E3;
+    }
     .contenido{ top: 0px;
         left: 0px;
         display: flex;
